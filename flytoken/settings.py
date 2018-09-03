@@ -32,7 +32,7 @@ EMAIL_USE_SSL = True
 EMAIL_HOST = 'smtp.exmail.qq.com'
 EMAIL_PORT = 465
 EMAIL_HOST_USER = 'git@youhub.cn'
-EMAIL_HOST_PASSWORD = 'Hz123456'
+EMAIL_HOST_PASSWORD = 'aa123456'
 
 
 
@@ -94,7 +94,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'flytoken',
         'USER': 'root',
-        'PASSWORD': 'Flytoken@2018',
+        'PASSWORD': 'aa@bb',
         'HOST': '127.0.0.1',
         'PORT': '3306',
     }
