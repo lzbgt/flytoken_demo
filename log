@@ -1,0 +1,1517 @@
+nohup: ignoring input
+System check identified some issues:
+
+WARNINGS:
+?: (urls.W005) URL namespace 'admin' isn't unique. You may not be able to reverse all URLs in this namespace
+
+System check identified 1 issue (0 silenced).
+[31/Aug/2018 09:34:55] "GET / HTTP/1.0" 200 396
+Not Found: /favicon.ico
+[31/Aug/2018 09:34:55] "GET /favicon.ico HTTP/1.0" 404 4395
+[31/Aug/2018 09:37:52] "GET / HTTP/1.0" 200 5194
+[31/Aug/2018 09:37:52] "GET /static/css/index.css HTTP/1.0" 200 4242
+[31/Aug/2018 09:37:52] "GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+[31/Aug/2018 09:37:52] "GET /static/js/index.js HTTP/1.0" 200 997
+[31/Aug/2018 09:37:52] "GET /static/css/global.css HTTP/1.0" 200 3056
+[31/Aug/2018 09:37:52] "GET /static/images/logo.png HTTP/1.0" 200 12120
+[31/Aug/2018 09:37:52] "GET /static/images/u6.png HTTP/1.0" 200 454
+[31/Aug/2018 09:37:52] "GET /static/images/1.png HTTP/1.0" 200 430599
+[31/Aug/2018 09:37:53] "GET /static/images/u28.png HTTP/1.0" 200 1125
+[31/Aug/2018 09:37:53] "GET /static/images/u20.png HTTP/1.0" 200 992
+[31/Aug/2018 09:37:53] "GET /static/images/u22.png HTTP/1.0" 200 941
+[31/Aug/2018 10:45:59] "GET / HTTP/1.0" 200 5194
+[31/Aug/2018 10:46:19] "GET / HTTP/1.0" 200 5194
+[31/Aug/2018 10:47:35] "GET / HTTP/1.0" 200 5194
+[31/Aug/2018 10:47:36] "GET /static/css/bootstrap.css HTTP/1.0" 304 0
+[31/Aug/2018 10:47:37] "GET /static/css/global.css HTTP/1.0" 304 0
+[31/Aug/2018 10:47:37] "GET /static/images/logo.png HTTP/1.0" 304 0
+[31/Aug/2018 10:47:37] "GET /static/images/u6.png HTTP/1.0" 304 0
+[31/Aug/2018 10:47:37] "GET /static/js/index.js HTTP/1.0" 304 0
+[31/Aug/2018 10:47:37] "GET /static/css/index.css HTTP/1.0" 304 0
+[31/Aug/2018 10:47:37] "GET /static/images/1.png HTTP/1.0" 200 430599
+[31/Aug/2018 10:47:38] "GET /static/css/index.css HTTP/1.0" 200 4242
+[31/Aug/2018 10:47:38] "GET /static/images/u28.png HTTP/1.0" 304 0
+[31/Aug/2018 10:47:38] "GET /static/images/u22.png HTTP/1.0" 304 0
+[31/Aug/2018 10:47:38] "GET /static/images/u20.png HTTP/1.0" 304 0
+[31/Aug/2018 10:47:42] "GET /signup/ HTTP/1.0" 200 3653
+[31/Aug/2018 10:47:43] "GET /static/css/register.css HTTP/1.0" 304 0
+[31/Aug/2018 10:47:48] "GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+[31/Aug/2018 10:48:12] "POST /signup/ HTTP/1.0" 302 0
+[31/Aug/2018 10:48:13] "GET /account_activation_sent/ HTTP/1.0" 200 2759
+[31/Aug/2018 10:48:13] "GET /static/css/global.css HTTP/1.0" 200 3056
+[31/Aug/2018 10:48:13] "GET /static/css/validate.css HTTP/1.0" 200 692
+[31/Aug/2018 10:48:13] "GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+[31/Aug/2018 10:48:13] "GET /static/images/logo.png HTTP/1.0" 200 12120
+[31/Aug/2018 10:48:13] "GET /static/images/u6.png HTTP/1.0" 200 454
+[31/Aug/2018 10:48:13] "GET /static/images/validate.png HTTP/1.0" 200 3357
+[31/Aug/2018 10:48:13] "GET /static/js/index.js HTTP/1.0" 200 997
+[31/Aug/2018 10:48:13] "GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+Not Found: /favicon.ico
+[31/Aug/2018 10:48:13] "GET /favicon.ico HTTP/1.0" 404 4395
+Internal Server Error: /activate/Mg/4z7-b59da5851a9d0043351a/
+Traceback (most recent call last):
+  File "/opt/apps/anaconda3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/opt/apps/anaconda3/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/opt/apps/anaconda3/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/flytoken/base/views.py", line 107, in activate
+    add_bonus(users)
+  File "/opt/flytoken/base/views.py", line 61, in add_bonus
+    bonus = Bonus.objects.get(pk=1)
+  File "/opt/apps/anaconda3/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/opt/apps/anaconda3/lib/python3.6/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+base.models.DoesNotExist: Bonus matching query does not exist.
+[31/Aug/2018 10:48:59] "GET /activate/Mg/4z7-b59da5851a9d0043351a/ HTTP/1.0" 500 76040
+[31/Aug/2018 10:49:29] "GET /activate/Mg/4z7-b59da5851a9d0043351a/ HTTP/1.0" 200 2317
+[31/Aug/2018 10:49:48] "GET /activate/Mg/4z7-b59da5851a9d0043351a/ HTTP/1.0" 200 2317
+[31/Aug/2018 10:49:54] "GET /login/ HTTP/1.0" 200 3137
+[31/Aug/2018 10:49:54] "GET /static/css/login.css HTTP/1.0" 304 0
+[31/Aug/2018 10:49:57] "GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+Forbidden (CSRF token missing or incorrect.): /login/
+[31/Aug/2018 10:50:15] "POST /login/ HTTP/1.0" 403 2513
+Not Found: /favicon.ico
+[31/Aug/2018 10:50:16] "GET /favicon.ico HTTP/1.0" 404 4395
+[31/Aug/2018 10:50:30] "GET /activate/Mg/4z7-b59da5851a9d0043351a HTTP/1.0" 301 0
+[31/Aug/2018 10:58:09] "GET /activate/Mg/4z7-b59da5851a9d0043351a/ HTTP/1.0" 200 2317
+[31/Aug/2018 10:58:13] "GET /signup/ HTTP/1.0" 200 3653
+[31/Aug/2018 10:58:14] "GET /login/ HTTP/1.0" 200 3323
+[31/Aug/2018 10:58:30] "GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+[31/Aug/2018 10:58:34] "POST /login/ HTTP/1.0" 302 0
+[31/Aug/2018 10:58:34] "GET /accounts/profile/ HTTP/1.0" 302 0
+[31/Aug/2018 10:58:34] "GET / HTTP/1.0" 200 7424
+[31/Aug/2018 10:58:34] "GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+[31/Aug/2018 10:58:34] "GET /static/images/logo.png HTTP/1.0" 200 12120
+[31/Aug/2018 10:58:34] "GET /static/css/global.css HTTP/1.0" 200 3056
+[31/Aug/2018 10:58:34] "GET /static/css/index.css HTTP/1.0" 200 4242
+[31/Aug/2018 10:58:34] "GET /static/images/u6.png HTTP/1.0" 200 454
+[31/Aug/2018 10:58:35] "GET /static/images/u20.png HTTP/1.0" 200 992
+[31/Aug/2018 10:58:35] "GET /static/js/index.js HTTP/1.0" 200 997
+[31/Aug/2018 10:58:35] "GET /static/images/u28.png HTTP/1.0" 200 1125
+[31/Aug/2018 10:58:35] "GET /static/images/u22.png HTTP/1.0" 200 941
+[31/Aug/2018 10:58:35] "GET /static/images/1.png HTTP/1.0" 200 430599
+[31/Aug/2018 10:58:35] "GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+Not Found: /favicon.ico
+[31/Aug/2018 10:58:36] "GET /favicon.ico HTTP/1.0" 404 4395
+[31/Aug/2018 11:01:48] "GET / HTTP/1.0" 200 7424
+[31/Aug/2018 11:01:48] "GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+[31/Aug/2018 11:01:48] "GET /static/images/u6.png HTTP/1.0" 200 454
+[31/Aug/2018 11:01:48] "GET /static/css/index.css HTTP/1.0" 200 4242
+[31/Aug/2018 11:01:48] "GET /static/images/logo.png HTTP/1.0" 200 12120
+[31/Aug/2018 11:01:48] "GET /static/css/global.css HTTP/1.0" 200 3056
+[31/Aug/2018 11:01:48] "GET /static/js/index.js HTTP/1.0" 200 997
+[31/Aug/2018 11:01:48] "GET /static/images/u22.png HTTP/1.0" 200 941
+[31/Aug/2018 11:01:48] "GET /static/images/u28.png HTTP/1.0" 200 1125
+[31/Aug/2018 11:01:48] "GET /static/images/u20.png HTTP/1.0" 200 992
+[31/Aug/2018 11:01:48] "GET /static/images/1.png HTTP/1.0" 200 430599
+[31/Aug/2018 11:01:49] "GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+[31/Aug/2018 11:01:51] "GET / HTTP/1.0" 200 7424
+[31/Aug/2018 11:01:51] "GET /static/images/u6.png HTTP/1.0" 200 454
+[31/Aug/2018 11:01:51] "GET /static/css/index.css HTTP/1.0" 200 4242
+[31/Aug/2018 11:01:51] "GET /static/css/global.css HTTP/1.0" 200 3056
+[31/Aug/2018 11:01:51] "GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+[31/Aug/2018 11:01:51] "GET /static/images/logo.png HTTP/1.0" 200 12120
+[31/Aug/2018 11:01:51] "GET /static/js/index.js HTTP/1.0" 200 997
+[31/Aug/2018 11:01:51] "GET /static/images/1.png HTTP/1.0" 200 430599
+[31/Aug/2018 11:01:51] "GET /static/images/u20.png HTTP/1.0" 200 992
+[31/Aug/2018 11:01:51] "GET /static/images/u28.png HTTP/1.0" 200 1125
+[31/Aug/2018 11:01:51] "GET /static/images/u22.png HTTP/1.0" 200 941
+[31/Aug/2018 11:01:51] "GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+[31/Aug/2018 11:01:54] "GET / HTTP/1.0" 200 7424
+[31/Aug/2018 11:01:54] "GET /static/images/u6.png HTTP/1.0" 200 454
+[31/Aug/2018 11:01:54] "GET /static/css/index.css HTTP/1.0" 200 4242
+[31/Aug/2018 11:01:54] "GET /static/css/global.css HTTP/1.0" 200 3056
+[31/Aug/2018 11:01:54] "GET /static/images/logo.png HTTP/1.0" 200 12120
+[31/Aug/2018 11:01:54] "GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+[31/Aug/2018 11:01:54] "GET /static/images/u22.png HTTP/1.0" 200 941
+[31/Aug/2018 11:01:54] "GET /static/images/1.png HTTP/1.0" 200 430599
+[31/Aug/2018 11:01:54] "GET /static/images/u28.png HTTP/1.0" 200 1125
+[31/Aug/2018 11:01:54] "GET /static/js/index.js HTTP/1.0" 200 997
+[31/Aug/2018 11:01:54] "GET /static/images/u20.png HTTP/1.0" 200 992
+[31/Aug/2018 11:01:54] "GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+[31/Aug/2018 11:07:45] "GET / HTTP/1.0" 200 5194
+[31/Aug/2018 11:07:45] "GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+[31/Aug/2018 11:07:45] "GET /static/css/index.css HTTP/1.0" 200 4242
+[31/Aug/2018 11:07:45] "GET /static/css/global.css HTTP/1.0" 200 3056
+[31/Aug/2018 11:07:45] "GET /static/images/logo.png HTTP/1.0" 200 12120
+[31/Aug/2018 11:07:45] "GET /static/images/u6.png HTTP/1.0" 200 454
+[31/Aug/2018 11:07:45] "GET /static/js/index.js HTTP/1.0" 200 997
+[31/Aug/2018 11:07:45] "GET /static/images/1.png HTTP/1.0" 200 430599
+[31/Aug/2018 11:07:45] "GET /static/images/u22.png HTTP/1.0" 200 941
+[31/Aug/2018 11:07:45] "GET /static/images/u28.png HTTP/1.0" 200 1125
+[31/Aug/2018 11:07:45] "GET /static/images/u20.png HTTP/1.0" 200 992
+[31/Aug/2018 11:07:45] "GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+[31/Aug/2018 11:07:47] "GET /signup HTTP/1.0" 301 0
+[31/Aug/2018 11:07:50] "GET /signup HTTP/1.0" 301 0
+[31/Aug/2018 11:07:52] "GET /login HTTP/1.0" 301 0
+[31/Aug/2018 11:07:53] "GET /login/ HTTP/1.0" 200 3323
+[31/Aug/2018 11:07:53] "GET /static/css/global.css HTTP/1.0" 200 3056
+[31/Aug/2018 11:07:53] "GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+[31/Aug/2018 11:07:53] "GET /static/images/u6.png HTTP/1.0" 200 454
+[31/Aug/2018 11:07:53] "GET /static/js/index.js HTTP/1.0" 200 997
+[31/Aug/2018 11:07:53] "GET /static/images/logo.png HTTP/1.0" 200 12120
+[31/Aug/2018 11:07:55] "GET /login/ HTTP/1.0" 200 3323
+[31/Aug/2018 11:07:58] "GET / HTTP/1.0" 200 5194
+[31/Aug/2018 11:07:58] "GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+[31/Aug/2018 11:07:59] "GET /static/images/u6.png HTTP/1.0" 200 454
+[31/Aug/2018 11:08:00] "GET /static/images/1.png HTTP/1.0" 200 430599
+[31/Aug/2018 11:11:22] "GET /login/ HTTP/1.0" 200 3323
+[31/Aug/2018 11:14:50] "GET /login/ HTTP/1.0" 200 3323
+[31/Aug/2018 11:22:10] "GET /login/ HTTP/1.0" 200 3265
+[31/Aug/2018 11:22:18] "GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+[31/Aug/2018 11:24:23] "POST /login/ HTTP/1.0" 200 3265
+[31/Aug/2018 11:24:23] "GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+[31/Aug/2018 11:24:23] "GET /static/css/login.css HTTP/1.0" 200 1166
+[31/Aug/2018 11:24:23] "GET /static/images/logo.png HTTP/1.0" 200 12120
+[31/Aug/2018 11:24:23] "GET /static/css/global.css HTTP/1.0" 200 3056
+[31/Aug/2018 11:24:23] "GET /static/images/u6.png HTTP/1.0" 200 454
+[31/Aug/2018 11:24:23] "GET /static/js/index.js HTTP/1.0" 200 997
+[31/Aug/2018 11:24:23] "GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+[31/Aug/2018 11:24:31] "GET / HTTP/1.0" 200 5194
+[31/Aug/2018 11:24:32] "GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+[31/Aug/2018 11:24:32] "GET /static/css/index.css HTTP/1.0" 200 4242
+[31/Aug/2018 11:24:32] "GET /static/css/global.css HTTP/1.0" 200 3056
+[31/Aug/2018 11:24:32] "GET /static/images/logo.png HTTP/1.0" 200 12120
+[31/Aug/2018 11:24:32] "GET /static/js/index.js HTTP/1.0" 200 997
+[31/Aug/2018 11:24:32] "GET /static/images/u6.png HTTP/1.0" 200 454
+[31/Aug/2018 11:24:32] "GET /static/images/1.png HTTP/1.0" 200 430599
+[31/Aug/2018 11:24:32] "GET /static/images/u28.png HTTP/1.0" 200 1125
+[31/Aug/2018 11:24:32] "GET /static/images/u22.png HTTP/1.0" 200 941
+[31/Aug/2018 11:24:32] "GET /static/images/u20.png HTTP/1.0" 200 992
+Not Found: /favicon.ico
+[31/Aug/2018 11:24:32] "GET /favicon.ico HTTP/1.0" 404 4395
+[31/Aug/2018 11:24:45] "GET /signup HTTP/1.0" 301 0
+[31/Aug/2018 11:24:45] "GET /signup/ HTTP/1.0" 200 3653
+[31/Aug/2018 11:24:45] "GET /static/css/register.css HTTP/1.0" 200 1379
+[31/Aug/2018 11:25:01] "GET /login HTTP/1.0" 301 0
+[31/Aug/2018 11:25:01] "GET /login/ HTTP/1.0" 200 3265
+[31/Aug/2018 11:25:01] "GET /static/css/login.css HTTP/1.0" 200 1166
+[31/Aug/2018 11:25:05] "POST /login/ HTTP/1.0" 200 3265
+[31/Aug/2018 11:25:05] "GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+[31/Aug/2018 11:25:05] "GET /static/images/logo.png HTTP/1.0" 200 12120
+[31/Aug/2018 11:25:05] "GET /static/css/login.css HTTP/1.0" 200 1166
+[31/Aug/2018 11:25:05] "GET /static/css/global.css HTTP/1.0" 200 3056
+[31/Aug/2018 11:25:05] "GET /static/images/u6.png HTTP/1.0" 200 454
+[31/Aug/2018 11:25:05] "GET /static/js/index.js HTTP/1.0" 200 997
+[31/Aug/2018 11:25:05] "GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+[31/Aug/2018 11:25:48] "GET /admin HTTP/1.0" 301 0
+[31/Aug/2018 11:25:48] "GET /admin/ HTTP/1.0" 302 0
+[31/Aug/2018 11:25:48] "GET /admin/login/?next=/admin/ HTTP/1.0" 200 1849
+[31/Aug/2018 11:25:48] "GET /static/admin/css/base.css HTTP/1.0" 200 16106
+[31/Aug/2018 11:25:48] "GET /static/admin/css/responsive.css HTTP/1.0" 200 17894
+[31/Aug/2018 11:25:48] "GET /static/admin/css/login.css HTTP/1.0" 200 1203
+[31/Aug/2018 11:25:48] "GET /static/admin/css/fonts.css HTTP/1.0" 200 423
+[31/Aug/2018 11:25:48] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.0" 200 80304
+[31/Aug/2018 11:25:48] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.0" 200 81348
+[31/Aug/2018 11:26:04] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.0" 200 82564
+[31/Aug/2018 11:26:07] "POST /admin/login/?next=/admin/ HTTP/1.0" 200 2015
+[31/Aug/2018 11:26:16] "POST /admin/login/?next=/admin/ HTTP/1.0" 200 2015
+[31/Aug/2018 11:26:28] "POST /admin/login/?next=/admin/ HTTP/1.0" 200 2015
+[31/Aug/2018 11:26:28] "GET /login/ HTTP/1.0" 200 3265
+[31/Aug/2018 11:27:53] "POST /login/ HTTP/1.0" 200 3322
+[31/Aug/2018 11:27:53] "GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+[31/Aug/2018 11:27:53] "GET /static/images/u6.png HTTP/1.0" 200 454
+[31/Aug/2018 11:27:53] "GET /static/css/login.css HTTP/1.0" 200 1166
+[31/Aug/2018 11:27:53] "GET /static/css/global.css HTTP/1.0" 200 3056
+[31/Aug/2018 11:27:53] "GET /static/images/logo.png HTTP/1.0" 200 12120
+[31/Aug/2018 11:27:54] "GET /static/js/index.js HTTP/1.0" 200 997
+[31/Aug/2018 11:27:54] "GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+[31/Aug/2018 11:28:11] "POST /login/ HTTP/1.0" 200 3322
+[31/Aug/2018 11:28:11] "GET /static/css/global.css HTTP/1.0" 200 3056
+[31/Aug/2018 11:28:11] "GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+[31/Aug/2018 11:28:11] "GET /static/css/login.css HTTP/1.0" 200 1166
+[31/Aug/2018 11:28:11] "GET /static/images/logo.png HTTP/1.0" 200 12120
+[31/Aug/2018 11:28:11] "GET /static/images/u6.png HTTP/1.0" 200 454
+[31/Aug/2018 11:28:11] "GET /static/js/index.js HTTP/1.0" 200 997
+[31/Aug/2018 11:28:11] "GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+[31/Aug/2018 11:28:45] "POST /login/ HTTP/1.0" 200 3484
+[31/Aug/2018 11:28:45] "GET /static/images/logo.png HTTP/1.0" 200 12120
+[31/Aug/2018 11:28:45] "GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+[31/Aug/2018 11:28:45] "GET /static/images/u6.png HTTP/1.0" 200 454
+[31/Aug/2018 11:28:45] "GET /static/css/global.css HTTP/1.0" 200 3056
+[31/Aug/2018 11:28:45] "GET /static/js/index.js HTTP/1.0" 200 997
+[31/Aug/2018 11:28:45] "GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+[31/Aug/2018 11:30:05] "POST /login/ HTTP/1.0" 200 3325
+[31/Aug/2018 11:30:05] "GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+[31/Aug/2018 11:30:05] "GET /static/css/global.css HTTP/1.0" 200 3056
+[31/Aug/2018 11:30:05] "GET /static/images/logo.png HTTP/1.0" 200 12120
+[31/Aug/2018 11:30:05] "GET /static/css/login.css HTTP/1.0" 200 1166
+[31/Aug/2018 11:30:05] "GET /static/images/u6.png HTTP/1.0" 200 454
+[31/Aug/2018 11:30:05] "GET /static/js/index.js HTTP/1.0" 200 997
+[31/Aug/2018 11:30:05] "GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+[31/Aug/2018 11:30:12] "POST /login/ HTTP/1.0" 302 0
+[31/Aug/2018 11:30:12] "GET /accounts/profile/ HTTP/1.0" 302 0
+[31/Aug/2018 11:30:12] "GET / HTTP/1.0" 200 7424
+[31/Aug/2018 11:30:12] "GET /static/css/global.css HTTP/1.0" 200 3056
+[31/Aug/2018 11:30:12] "GET /static/css/index.css HTTP/1.0" 200 4242
+[31/Aug/2018 11:30:12] "GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+[31/Aug/2018 11:30:12] "GET /static/images/u6.png HTTP/1.0" 200 454
+[31/Aug/2018 11:30:12] "GET /static/images/logo.png HTTP/1.0" 200 12120
+[31/Aug/2018 11:30:12] "GET /static/js/index.js HTTP/1.0" 200 997
+[31/Aug/2018 11:30:12] "GET /static/images/u20.png HTTP/1.0" 200 992
+[31/Aug/2018 11:30:12] "GET /static/images/u28.png HTTP/1.0" 200 1125
+[31/Aug/2018 11:30:12] "GET /static/images/1.png HTTP/1.0" 200 430599
+[31/Aug/2018 11:30:12] "GET /static/images/u22.png HTTP/1.0" 200 941
+[31/Aug/2018 11:30:12] "GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+[31/Aug/2018 11:30:43] "GET / HTTP/1.0" 200 7424
+[31/Aug/2018 11:31:06] "GET /logout HTTP/1.0" 301 0
+[31/Aug/2018 11:31:06] "GET /logout/ HTTP/1.0" 302 0
+[31/Aug/2018 11:31:06] "GET / HTTP/1.0" 200 5194
+[31/Aug/2018 11:31:55] "GET / HTTP/1.0" 200 5212
+[31/Aug/2018 11:31:55] "GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+[31/Aug/2018 11:31:55] "GET /static/css/index.css HTTP/1.0" 200 4242
+[31/Aug/2018 11:31:55] "GET /static/css/global.css HTTP/1.0" 200 3056
+[31/Aug/2018 11:31:55] "GET /static/images/u6.png HTTP/1.0" 200 454
+[31/Aug/2018 11:31:55] "GET /static/images/logo.png HTTP/1.0" 200 12120
+[31/Aug/2018 11:31:55] "GET /static/js/index.js HTTP/1.0" 200 997
+[31/Aug/2018 11:31:55] "GET /static/images/u28.png HTTP/1.0" 200 1125
+[31/Aug/2018 11:31:55] "GET /static/images/u22.png HTTP/1.0" 200 941
+[31/Aug/2018 11:31:55] "GET /static/images/u20.png HTTP/1.0" 200 992
+[31/Aug/2018 11:31:55] "GET /static/images/1.png HTTP/1.0" 200 430599
+[31/Aug/2018 11:31:55] "GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+[31/Aug/2018 11:31:58] "GET /login HTTP/1.0" 301 0
+[31/Aug/2018 11:31:58] "GET /login/ HTTP/1.0" 200 3343
+[31/Aug/2018 11:31:58] "GET /static/css/login.css HTTP/1.0" 200 1166
+[31/Aug/2018 11:31:58] "GET /static/images/logo.png HTTP/1.0" 200 12120
+[31/Aug/2018 11:31:58] "GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+[31/Aug/2018 11:31:58] "GET /static/css/global.css HTTP/1.0" 200 3056
+[31/Aug/2018 11:31:58] "GET /static/images/u6.png HTTP/1.0" 200 454
+[31/Aug/2018 11:31:58] "GET /static/js/index.js HTTP/1.0" 200 997
+[31/Aug/2018 11:31:58] "GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+[31/Aug/2018 11:32:03] "POST /login/ HTTP/1.0" 302 0
+[31/Aug/2018 11:32:03] "GET /accounts/profile/ HTTP/1.0" 302 0
+[31/Aug/2018 11:32:03] "GET / HTTP/1.0" 200 7422
+[31/Aug/2018 11:32:03] "GET /static/css/global.css HTTP/1.0" 200 3056
+[31/Aug/2018 11:32:03] "GET /static/images/logo.png HTTP/1.0" 200 12120
+[31/Aug/2018 11:32:03] "GET /static/css/index.css HTTP/1.0" 200 4242
+[31/Aug/2018 11:32:03] "GET /static/images/u6.png HTTP/1.0" 200 454
+[31/Aug/2018 11:32:03] "GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+[31/Aug/2018 11:32:03] "GET /static/js/index.js HTTP/1.0" 200 997
+[31/Aug/2018 11:32:03] "GET /static/images/1.png HTTP/1.0" 200 430599
+[31/Aug/2018 11:32:03] "GET /static/images/u20.png HTTP/1.0" 200 992
+[31/Aug/2018 11:32:03] "GET /static/images/u22.png HTTP/1.0" 200 941
+[31/Aug/2018 11:32:03] "GET /static/images/u28.png HTTP/1.0" 200 1125
+[31/Aug/2018 11:32:03] "GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+[31/Aug/2018 11:33:46] "GET / HTTP/1.0" 200 7454
+[31/Aug/2018 11:33:46] "GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+[31/Aug/2018 11:33:46] "GET /static/images/logo.png HTTP/1.0" 200 12120
+[31/Aug/2018 11:33:46] "GET /static/css/global.css HTTP/1.0" 200 3056
+[31/Aug/2018 11:33:46] "GET /static/css/index.css HTTP/1.0" 200 4242
+[31/Aug/2018 11:33:46] "GET /static/images/u6.png HTTP/1.0" 200 454
+[31/Aug/2018 11:33:46] "GET /static/images/1.png HTTP/1.0" 200 430599
+[31/Aug/2018 11:33:46] "GET /static/js/index.js HTTP/1.0" 200 997
+[31/Aug/2018 11:33:46] "GET /static/images/u20.png HTTP/1.0" 200 992
+[31/Aug/2018 11:33:46] "GET /static/images/u28.png HTTP/1.0" 200 1125
+[31/Aug/2018 11:33:46] "GET /static/images/u22.png HTTP/1.0" 200 941
+[31/Aug/2018 11:33:46] "GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+[31/Aug/2018 11:33:56] "GET /logout HTTP/1.0" 301 0
+[31/Aug/2018 11:33:56] "GET /logout/ HTTP/1.0" 302 0
+[31/Aug/2018 11:33:56] "GET / HTTP/1.0" 200 5212
+[31/Aug/2018 11:33:56] "GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+[31/Aug/2018 11:33:56] "GET /static/css/global.css HTTP/1.0" 200 3056
+[31/Aug/2018 11:33:56] "GET /static/css/index.css HTTP/1.0" 200 4242
+[31/Aug/2018 11:33:56] "GET /static/images/logo.png HTTP/1.0" 200 12120
+[31/Aug/2018 11:33:56] "GET /static/images/u6.png HTTP/1.0" 200 454
+[31/Aug/2018 11:33:56] "GET /static/js/index.js HTTP/1.0" 200 997
+[31/Aug/2018 11:33:56] "GET /static/images/1.png HTTP/1.0" 200 430599
+[31/Aug/2018 11:33:56] "GET /static/images/u20.png HTTP/1.0" 200 992
+[31/Aug/2018 11:33:56] "GET /static/images/u28.png HTTP/1.0" 200 1125
+[31/Aug/2018 11:33:56] "GET /static/images/u22.png HTTP/1.0" 200 941
+[31/Aug/2018 11:33:56] "GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+[31/Aug/2018 11:33:59] "GET /login HTTP/1.0" 301 0
+[31/Aug/2018 11:33:59] "GET /login/ HTTP/1.0" 200 3343
+[31/Aug/2018 11:33:59] "GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+[31/Aug/2018 11:33:59] "GET /static/images/logo.png HTTP/1.0" 200 12120
+[31/Aug/2018 11:33:59] "GET /static/css/login.css HTTP/1.0" 200 1166
+[31/Aug/2018 11:33:59] "GET /static/images/u6.png HTTP/1.0" 200 454
+[31/Aug/2018 11:33:59] "GET /static/css/global.css HTTP/1.0" 200 3056
+[31/Aug/2018 11:33:59] "GET /static/js/index.js HTTP/1.0" 200 997
+[31/Aug/2018 11:33:59] "GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+[31/Aug/2018 11:34:01] "POST /login/ HTTP/1.0" 302 0
+[31/Aug/2018 11:34:01] "GET /accounts/profile/ HTTP/1.0" 302 0
+[31/Aug/2018 11:34:01] "GET / HTTP/1.0" 200 7454
+[31/Aug/2018 11:34:01] "GET /static/images/logo.png HTTP/1.0" 200 12120
+[31/Aug/2018 11:34:01] "GET /static/css/index.css HTTP/1.0" 200 4242
+[31/Aug/2018 11:34:01] "GET /static/images/u6.png HTTP/1.0" 200 454
+[31/Aug/2018 11:34:01] "GET /static/css/global.css HTTP/1.0" 200 3056
+[31/Aug/2018 11:34:01] "GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+[31/Aug/2018 11:34:01] "GET /static/images/u28.png HTTP/1.0" 200 1125
+[31/Aug/2018 11:34:01] "GET /static/js/index.js HTTP/1.0" 200 997
+[31/Aug/2018 11:34:01] "GET /static/images/u22.png HTTP/1.0" 200 941
+[31/Aug/2018 11:34:01] "GET /static/images/1.png HTTP/1.0" 200 430599
+[31/Aug/2018 11:34:01] "GET /static/images/u20.png HTTP/1.0" 200 992
+[31/Aug/2018 11:34:01] "GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+[31/Aug/2018 11:46:23] "GET /signup HTTP/1.0" 301 0
+[31/Aug/2018 11:46:23] "GET /signup/ HTTP/1.0" 200 3597
+[31/Aug/2018 11:46:29] "GET /login/ HTTP/1.0" 200 3269
+[31/Aug/2018 11:46:38] "GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+[31/Aug/2018 11:47:33] "GET /logout HTTP/1.0" 301 0
+[31/Aug/2018 11:47:33] "GET /logout/ HTTP/1.0" 302 0
+[31/Aug/2018 11:47:33] "GET / HTTP/1.0" 200 5212
+[31/Aug/2018 11:47:33] "GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+[31/Aug/2018 11:47:33] "GET /static/images/logo.png HTTP/1.0" 200 12120
+[31/Aug/2018 11:47:33] "GET /static/images/u6.png HTTP/1.0" 200 454
+[31/Aug/2018 11:47:33] "GET /static/css/index.css HTTP/1.0" 200 4242
+[31/Aug/2018 11:47:33] "GET /static/css/global.css HTTP/1.0" 200 3056
+[31/Aug/2018 11:47:33] "GET /static/js/index.js HTTP/1.0" 200 997
+[31/Aug/2018 11:47:33] "GET /static/images/u28.png HTTP/1.0" 200 1125
+[31/Aug/2018 11:47:33] "GET /static/images/u20.png HTTP/1.0" 200 992
+[31/Aug/2018 11:47:33] "GET /static/images/1.png HTTP/1.0" 200 430599
+[31/Aug/2018 11:47:33] "GET /static/images/u22.png HTTP/1.0" 200 941
+[31/Aug/2018 11:47:33] "GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+[31/Aug/2018 11:54:18] "GET /signup/ HTTP/1.0" 200 3671
+[31/Aug/2018 11:55:06] "GET /signup/ HTTP/1.0" 200 3671
+[31/Aug/2018 11:55:35] "GET /signup/ HTTP/1.0" 200 3671
+[31/Aug/2018 11:55:36] "GET / HTTP/1.0" 200 5212
+[31/Aug/2018 11:55:36] "GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+[31/Aug/2018 11:55:36] "GET /static/images/logo.png HTTP/1.0" 200 12120
+[31/Aug/2018 11:55:36] "GET /static/css/index.css HTTP/1.0" 200 4242
+[31/Aug/2018 11:55:36] "GET /static/images/u6.png HTTP/1.0" 200 454
+[31/Aug/2018 11:55:36] "GET /static/css/global.css HTTP/1.0" 200 3056
+[31/Aug/2018 11:55:36] "GET /static/images/u20.png HTTP/1.0" 200 992
+[31/Aug/2018 11:55:36] "GET /static/images/u22.png HTTP/1.0" 200 941
+[31/Aug/2018 11:55:36] "GET /static/images/u28.png HTTP/1.0" 200 1125
+[31/Aug/2018 11:55:36] "GET /static/js/index.js HTTP/1.0" 200 997
+[31/Aug/2018 11:55:36] "GET /static/images/1.png HTTP/1.0" 200 430599
+[31/Aug/2018 11:55:36] "GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+[31/Aug/2018 11:55:37] "GET /login HTTP/1.0" 301 0
+[31/Aug/2018 11:55:37] "GET /login/ HTTP/1.0" 200 3343
+[31/Aug/2018 11:55:37] "GET /static/css/login.css HTTP/1.0" 200 1166
+[31/Aug/2018 11:55:37] "GET /static/css/global.css HTTP/1.0" 200 3056
+[31/Aug/2018 11:55:37] "GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+[31/Aug/2018 11:55:37] "GET /static/images/logo.png HTTP/1.0" 200 12120
+[31/Aug/2018 11:55:37] "GET /static/images/u6.png HTTP/1.0" 200 454
+[31/Aug/2018 11:55:38] "GET /static/js/index.js HTTP/1.0" 200 997
+[31/Aug/2018 11:55:38] "GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+[31/Aug/2018 11:55:39] "POST /login/ HTTP/1.0" 302 0
+[31/Aug/2018 11:55:39] "GET /accounts/profile/ HTTP/1.0" 302 0
+[31/Aug/2018 11:55:39] "GET / HTTP/1.0" 200 7454
+[31/Aug/2018 11:55:39] "GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+[31/Aug/2018 11:55:39] "GET /static/css/index.css HTTP/1.0" 200 4242
+[31/Aug/2018 11:55:39] "GET /static/css/global.css HTTP/1.0" 200 3056
+[31/Aug/2018 11:55:39] "GET /static/images/logo.png HTTP/1.0" 200 12120
+[31/Aug/2018 11:55:39] "GET /static/images/u6.png HTTP/1.0" 200 454
+[31/Aug/2018 11:55:39] "GET /static/js/index.js HTTP/1.0" 200 997
+[31/Aug/2018 11:55:39] "GET /static/images/u28.png HTTP/1.0" 200 1125
+[31/Aug/2018 11:55:39] "GET /static/images/1.png HTTP/1.0" 200 430599
+[31/Aug/2018 11:55:39] "GET /static/images/u22.png HTTP/1.0" 200 941
+[31/Aug/2018 11:55:39] "GET /static/images/u20.png HTTP/1.0" 200 992
+[31/Aug/2018 11:55:40] "GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+[31/Aug/2018 11:55:40] "GET / HTTP/1.0" 200 5212
+[31/Aug/2018 11:55:40] "GET /static/css/index.css HTTP/1.0" 200 4242
+[31/Aug/2018 11:55:46] "GET / HTTP/1.0" 200 5212
+[31/Aug/2018 11:55:48] "GET / HTTP/1.0" 200 5212
+[31/Aug/2018 11:56:54] "GET / HTTP/1.0" 200 7453
+[31/Aug/2018 11:56:54] "GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+[31/Aug/2018 11:56:54] "GET /static/css/global.css HTTP/1.0" 200 3056
+[31/Aug/2018 11:56:54] "GET /static/images/logo.png HTTP/1.0" 200 12120
+[31/Aug/2018 11:56:54] "GET /static/images/u6.png HTTP/1.0" 200 454
+[31/Aug/2018 11:56:54] "GET /static/css/index.css HTTP/1.0" 200 4242
+[31/Aug/2018 11:56:54] "GET /static/images/u22.png HTTP/1.0" 200 941
+[31/Aug/2018 11:56:54] "GET /static/js/index.js HTTP/1.0" 200 997
+[31/Aug/2018 11:56:54] "GET /static/images/1.png HTTP/1.0" 200 430599
+[31/Aug/2018 11:56:54] "GET /static/images/u28.png HTTP/1.0" 200 1125
+[31/Aug/2018 11:56:54] "GET /static/images/u20.png HTTP/1.0" 200 992
+[31/Aug/2018 11:56:54] "GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+[31/Aug/2018 11:57:10] "GET /logout HTTP/1.0" 301 0
+[31/Aug/2018 11:57:10] "GET /logout/ HTTP/1.0" 302 0
+[31/Aug/2018 11:57:10] "GET / HTTP/1.0" 200 5212
+[31/Aug/2018 11:57:10] "GET /static/css/index.css HTTP/1.0" 200 4242
+[31/Aug/2018 11:57:10] "GET /static/images/logo.png HTTP/1.0" 200 12120
+[31/Aug/2018 11:57:10] "GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+[31/Aug/2018 11:57:10] "GET /static/images/u6.png HTTP/1.0" 200 454
+[31/Aug/2018 11:57:10] "GET /static/css/global.css HTTP/1.0" 200 3056
+[31/Aug/2018 11:57:10] "GET /static/images/u28.png HTTP/1.0" 200 1125
+[31/Aug/2018 11:57:10] "GET /static/images/1.png HTTP/1.0" 200 430599
+[31/Aug/2018 11:57:10] "GET /static/images/u22.png HTTP/1.0" 200 941
+[31/Aug/2018 11:57:10] "GET /static/js/index.js HTTP/1.0" 200 997
+[31/Aug/2018 11:57:10] "GET /static/images/u20.png HTTP/1.0" 200 992
+[31/Aug/2018 11:57:10] "GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+[31/Aug/2018 11:58:59] "GET / HTTP/1.0" 200 5212
+[31/Aug/2018 11:59:10] "GET /signup/ HTTP/1.0" 200 3671
+[31/Aug/2018 11:59:12] "GET /login/ HTTP/1.0" 200 3343
+[31/Aug/2018 11:59:14] "GET /signup/ HTTP/1.0" 200 3671
+[31/Aug/2018 11:59:17] "GET /signup/ HTTP/1.0" 200 3671
+[31/Aug/2018 12:18:41] "GET /activate/Mg/4z7-b59da5851a9d0043351a/ HTTP/1.0" 200 2335
+[31/Aug/2018 12:18:42] "GET /activate/Mg/4z7-b59da5851a9d0043351a/ HTTP/1.0" 200 2335
+[31/Aug/2018 12:18:42] "GET /activate/Mg/4z7-b59da5851a9d0043351a/ HTTP/1.0" 200 2335
+[31/Aug/2018 12:18:42] "GET /activate/Mg/4z7-b59da5851a9d0043351a/ HTTP/1.0" 200 2335
+[31/Aug/2018 12:18:42] "GET /activate/Mg/4z7-b59da5851a9d0043351a/ HTTP/1.0" 200 2335
+[31/Aug/2018 12:18:42] "GET /activate/Mg/4z7-b59da5851a9d0043351a/ HTTP/1.0" 200 2335
+[31/Aug/2018 12:18:42] "GET /activate/Mg/4z7-b59da5851a9d0043351a/ HTTP/1.0" 200 2335
+[31/Aug/2018 13:04:47] "GET / HTTP/1.0" 200 5212
+[31/Aug/2018 14:34:19] "GET / HTTP/1.0" 200 5212
+[31/Aug/2018 14:34:19] "GET /static/css/bootstrap.css HTTP/1.0" 304 0
+[31/Aug/2018 14:34:19] "GET /static/css/index.css HTTP/1.0" 304 0
+[31/Aug/2018 14:34:19] "GET /static/css/global.css HTTP/1.0" 304 0
+[31/Aug/2018 14:34:19] "GET /static/images/logo.png HTTP/1.0" 304 0
+[31/Aug/2018 14:34:19] "GET /static/images/u6.png HTTP/1.0" 304 0
+[31/Aug/2018 14:34:19] "GET /static/js/index.js HTTP/1.0" 304 0
+[31/Aug/2018 14:34:19] "GET /static/images/u28.png HTTP/1.0" 304 0
+[31/Aug/2018 14:34:19] "GET /static/images/1.png HTTP/1.0" 304 0
+[31/Aug/2018 14:34:19] "GET /static/images/u22.png HTTP/1.0" 304 0
+[31/Aug/2018 14:34:19] "GET /static/images/u20.png HTTP/1.0" 304 0
+[31/Aug/2018 14:34:45] "GET /resend_activation/805042956@qq.com/ HTTP/1.0" 200 57
+[31/Aug/2018 14:36:37] "GET /resend_activation/805042956@qq.com/?undefined HTTP/1.0" 200 57
+[31/Aug/2018 14:36:43] "GET /resend_activation/805042956@qq.com/?undefined HTTP/1.0" 200 57
+[31/Aug/2018 14:37:34] "GET /resend_activation/805042956@qq.com/?undefined HTTP/1.0" 200 57
+[31/Aug/2018 14:39:12] "GET /resend_activation/805042956@qq.com/?undefined HTTP/1.0" 200 57
+[31/Aug/2018 14:39:36] "GET /resend_activation/805042956@qq.com/?undefined HTTP/1.0" 200 57
+[31/Aug/2018 14:40:21] "GET /resend_activation/805042956@qq.com/?undefined HTTP/1.0" 200 57
+[31/Aug/2018 14:40:57] "GET /resend_activation/805042956@qq.com/?undefined HTTP/1.0" 200 57
+[31/Aug/2018 14:41:00] "GET /resend_activation/805042956@qq.com/?undefined HTTP/1.0" 200 57
+[31/Aug/2018 14:42:12] "GET /resend_activation/805042956@qq.com/ HTTP/1.0" 200 57
+[31/Aug/2018 14:51:29] "GET /resend_activation/805042956@qq.com/ HTTP/1.0" 200 57
+[31/Aug/2018 14:52:30] "GET /resend_activation/805042956@qq.com/ HTTP/1.0" 200 57
+[31/Aug/2018 15:10:19] "GET / HTTP/1.0" 200 5212
+Not Found: /activate/account_activation_email/
+[31/Aug/2018 15:13:00] "GET /activate/account_activation_email/ HTTP/1.0" 404 4464
+Not Found: /activate/account_activation_email/
+[31/Aug/2018 15:13:05] "GET /activate/account_activation_email/ HTTP/1.0" 404 4464
+Not Found: /activate/account_activation_email/
+[31/Aug/2018 15:13:35] "GET /activate/account_activation_email/ HTTP/1.0" 404 4464
+Not Found: /activate/password_reset_email/
+[31/Aug/2018 15:16:32] "GET /activate/password_reset_email/ HTTP/1.0" 404 4452
+Not Found: /password_reset_email/
+[31/Aug/2018 15:16:35] "GET /password_reset_email/ HTTP/1.0" 404 4425
+[31/Aug/2018 15:16:42] "GET / HTTP/1.0" 200 5212
+[31/Aug/2018 15:16:43] "GET /signup/ HTTP/1.0" 200 3671
+[31/Aug/2018 15:16:43] "GET /static/css/register.css HTTP/1.0" 304 0
+Not Found: /password_reset_email/
+[31/Aug/2018 15:16:46] "GET /password_reset_email/ HTTP/1.0" 404 4425
+[31/Aug/2018 15:20:06] "GET /password_reset/ HTTP/1.0" 200 50
+Not Found: /password_reset_email/
+[31/Aug/2018 15:21:17] "GET /password_reset_email/ HTTP/1.0" 404 4425
+Internal Server Error: /reset_password/undefined/
+Traceback (most recent call last):
+  File "/opt/apps/anaconda3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/opt/apps/anaconda3/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/opt/apps/anaconda3/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/flytoken/base/views.py", line 177, in reset_password
+    u = User.objects.get(email = name)
+  File "/opt/apps/anaconda3/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/opt/apps/anaconda3/lib/python3.6/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+base.models.DoesNotExist: User matching query does not exist.
+[31/Aug/2018 15:32:50] "GET /reset_password/undefined/ HTTP/1.0" 500 72112
+Internal Server Error: /reset_password/undefined/
+Traceback (most recent call last):
+  File "/opt/apps/anaconda3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/opt/apps/anaconda3/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/opt/apps/anaconda3/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/flytoken/base/views.py", line 177, in reset_password
+    u = User.objects.get(email = name)
+  File "/opt/apps/anaconda3/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/opt/apps/anaconda3/lib/python3.6/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+base.models.DoesNotExist: User matching query does not exist.
+[31/Aug/2018 15:33:15] "GET /reset_password/undefined/ HTTP/1.0" 500 71977
+[31/Aug/2018 15:33:54] "GET /reset_password/805042956@qq.com/ HTTP/1.0" 200 26
+[31/Aug/2018 15:33:55] "GET /reset_password/805042956@qq.com/ HTTP/1.0" 200 26
+[31/Aug/2018 15:34:02] "GET /reset_password/805042956@qq.com/ HTTP/1.0" 200 26
+[31/Aug/2018 15:35:37] "GET / HTTP/1.0" 200 5212
+[31/Aug/2018 15:35:40] "GET /password_reset/ HTTP/1.0" 200 50
+[31/Aug/2018 15:47:11] "GET / HTTP/1.0" 200 5212
+[31/Aug/2018 15:47:15] "GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+[31/Aug/2018 15:47:28] "GET /login HTTP/1.0" 301 0
+[31/Aug/2018 15:47:28] "GET /login/ HTTP/1.0" 200 3343
+[31/Aug/2018 15:47:28] "GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+[31/Aug/2018 15:47:28] "GET /static/css/login.css HTTP/1.0" 200 1166
+[31/Aug/2018 15:47:28] "GET /static/images/logo.png HTTP/1.0" 200 12120
+[31/Aug/2018 15:47:28] "GET /static/css/global.css HTTP/1.0" 200 3056
+[31/Aug/2018 15:47:28] "GET /static/images/u6.png HTTP/1.0" 200 454
+[31/Aug/2018 15:47:28] "GET /static/js/index.js HTTP/1.0" 200 997
+[31/Aug/2018 15:47:28] "GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+[31/Aug/2018 15:47:30] "POST /login/ HTTP/1.0" 302 0
+[31/Aug/2018 15:47:30] "GET /accounts/profile/ HTTP/1.0" 302 0
+[31/Aug/2018 15:47:30] "GET / HTTP/1.0" 200 7453
+[31/Aug/2018 15:47:30] "GET /static/css/index.css HTTP/1.0" 200 4242
+[31/Aug/2018 15:47:30] "GET /static/images/logo.png HTTP/1.0" 200 12120
+[31/Aug/2018 15:47:30] "GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+[31/Aug/2018 15:47:30] "GET /static/images/u6.png HTTP/1.0" 200 454
+[31/Aug/2018 15:47:30] "GET /static/css/global.css HTTP/1.0" 200 3056
+[31/Aug/2018 15:47:30] "GET /static/js/index.js HTTP/1.0" 200 997
+[31/Aug/2018 15:47:30] "GET /static/images/u28.png HTTP/1.0" 200 1125
+[31/Aug/2018 15:47:30] "GET /static/images/u22.png HTTP/1.0" 200 941
+[31/Aug/2018 15:47:30] "GET /static/images/1.png HTTP/1.0" 200 430599
+[31/Aug/2018 15:47:30] "GET /static/images/u20.png HTTP/1.0" 200 992
+[31/Aug/2018 15:47:30] "GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+[31/Aug/2018 15:47:37] "GET / HTTP/1.0" 200 7453
+[31/Aug/2018 15:47:37] "GET /static/images/u6.png HTTP/1.0" 200 454
+[31/Aug/2018 15:47:37] "GET /static/css/index.css HTTP/1.0" 200 4242
+[31/Aug/2018 15:47:37] "GET /static/css/global.css HTTP/1.0" 200 3056
+[31/Aug/2018 15:47:37] "GET /static/images/logo.png HTTP/1.0" 200 12120
+[31/Aug/2018 15:47:37] "GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+[31/Aug/2018 15:47:38] "GET /static/js/index.js HTTP/1.0" 200 997
+[31/Aug/2018 15:47:38] "GET /static/images/u28.png HTTP/1.0" 200 1125
+[31/Aug/2018 15:47:38] "GET /static/images/u22.png HTTP/1.0" 200 941
+[31/Aug/2018 15:47:38] "GET /static/images/u20.png HTTP/1.0" 200 992
+[31/Aug/2018 15:47:38] "GET /static/images/1.png HTTP/1.0" 200 430599
+[31/Aug/2018 15:47:38] "GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+[31/Aug/2018 15:47:47] "GET / HTTP/1.0" 200 7453
+[31/Aug/2018 15:47:47] "GET /static/css/index.css HTTP/1.0" 200 4242
+[31/Aug/2018 15:47:47] "GET /static/images/u6.png HTTP/1.0" 200 454
+[31/Aug/2018 15:47:47] "GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+[31/Aug/2018 15:47:47] "GET /static/css/global.css HTTP/1.0" 200 3056
+[31/Aug/2018 15:47:47] "GET /static/images/logo.png HTTP/1.0" 200 12120
+[31/Aug/2018 15:47:47] "GET /static/js/index.js HTTP/1.0" 200 997
+[31/Aug/2018 15:47:47] "GET /static/images/u28.png HTTP/1.0" 200 1125
+[31/Aug/2018 15:47:47] "GET /static/images/1.png HTTP/1.0" 200 430599
+[31/Aug/2018 15:47:47] "GET /static/images/u20.png HTTP/1.0" 200 992
+[31/Aug/2018 15:47:47] "GET /static/images/u22.png HTTP/1.0" 200 941
+[31/Aug/2018 15:47:47] "GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+Not Found: /config.json
+[31/Aug/2018 22:40:11] "GET /config.json HTTP/1.0" 404 4395
+Not Found: /aa/config.json
+[31/Aug/2018 23:34:52] "GET /aa/config.json HTTP/1.0" 404 4404
+nohup: ignoring input
+System check identified some issues:
+
+WARNINGS:
+?: (urls.W005) URL namespace 'admin' isn't unique. You may not be able to reverse all URLs in this namespace
+
+System check identified 1 issue (0 silenced).
+"GET / HTTP/1.0" 200 7435
+"GET /logout/ HTTP/1.0" 302 0
+"GET / HTTP/1.0" 200 5212
+"GET /signup/ HTTP/1.0" 200 4033
+"GET /login/ HTTP/1.0" 200 3343
+"POST /login/ HTTP/1.0" 302 0
+"GET /accounts/profile/ HTTP/1.0" 302 0
+"GET / HTTP/1.0" 200 7435
+"GET /bonus/ HTTP/1.0" 200 252
+"GET /rcode/ HTTP/1.0" 200 30
+"GET /signup/ HTTP/1.0" 200 3940
+message: MTc, 4za-94d10b2bdacf09cde58c
+"POST /signup/ HTTP/1.0" 200 2679
+"GET /activate/MTc/4za-94d10b2bdacf09cde58c HTTP/1.0" 301 0
+/opt/apps/anaconda3/lib/python3.6/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField AuditLog.created_time received a naive datetime (2018-09-03 20:48:35.376119) while time zone support is active.
+  RuntimeWarning)
+"GET /activate/MTc/4za-94d10b2bdacf09cde58c/ HTTP/1.0" 302 0
+"GET / HTTP/1.0" 200 7435
+"GET /bonus/ HTTP/1.0" 200 252
+"GET /logout/ HTTP/1.0" 302 0
+"GET / HTTP/1.0" 200 5212
+"GET /login/ HTTP/1.0" 200 3343
+"POST /login/ HTTP/1.0" 302 0
+"GET /accounts/profile/ HTTP/1.0" 302 0
+"GET / HTTP/1.0" 200 7435
+"GET /bonus/ HTTP/1.0" 200 262
+"GET / HTTP/1.0" 200 7435
+"GET / HTTP/1.0" 200 5212
+"GET /static/js/index.js HTTP/1.0" 200 997
+"GET /login/ HTTP/1.0" 200 3343
+"GET /static/css/login.css HTTP/1.0" 200 1166
+"POST /login/ HTTP/1.0" 200 3343
+"POST /login/ HTTP/1.0" 200 3343
+"POST /login/ HTTP/1.0" 200 3343
+"POST /login/ HTTP/1.0" 200 3343
+"POST /login/ HTTP/1.0" 200 3343
+Not Found: /login/retrieve.html
+"GET /login/retrieve.html HTTP/1.0" 404 4385
+Not Found: /login/retrieve.html
+"GET /login/retrieve.html HTTP/1.0" 404 4385
+Not Found: /login/retrieve.html
+"GET /login/retrieve.html HTTP/1.0" 404 4385
+Not Found: /login/retrieve.html
+"GET /login/retrieve.html HTTP/1.0" 404 4385
+Not Found: /login/retrieve.html
+"GET /login/retrieve.html HTTP/1.0" 404 4385
+"POST /login/ HTTP/1.0" 200 3343
+Not Found: /login/retrieve.html
+"GET /login/retrieve.html HTTP/1.0" 404 4385
+"GET / HTTP/1.0" 200 5212
+"GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+"GET /signup/ HTTP/1.0" 200 4033
+"GET /static/css/register.css HTTP/1.0" 200 1379
+"GET /login/ HTTP/1.0" 200 3343
+"POST /login/ HTTP/1.0" 200 3343
+"POST /login/ HTTP/1.0" 200 3343
+"GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+"POST /login/ HTTP/1.0" 200 3343
+"GET /static/css/login.css HTTP/1.0" 200 1166
+"GET /static/images/u6.png HTTP/1.0" 200 454
+"GET /static/css/global.css HTTP/1.0" 200 3056
+"GET /static/images/logo.png HTTP/1.0" 200 12120
+"GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+"GET /static/js/index.js HTTP/1.0" 200 997
+"GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+"POST /login/ HTTP/1.0" 200 3343
+"GET /static/images/logo.png HTTP/1.0" 200 12120
+"GET /static/images/u6.png HTTP/1.0" 200 454
+"GET /static/css/global.css HTTP/1.0" 200 3056
+"GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+"GET /static/css/login.css HTTP/1.0" 200 1166
+"GET /static/js/index.js HTTP/1.0" 200 3743
+"GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+"POST /login/ HTTP/1.0" 200 3343
+"GET /static/css/login.css HTTP/1.0" 200 1166
+"GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+"GET /static/css/global.css HTTP/1.0" 200 3056
+"GET /static/images/logo.png HTTP/1.0" 200 12120
+"GET /static/images/u6.png HTTP/1.0" 200 454
+"GET /static/js/index.js HTTP/1.0" 200 3743
+"GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+"POST /login/ HTTP/1.0" 200 3343
+"GET /static/css/global.css HTTP/1.0" 200 3056
+"GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+"GET /static/css/login.css HTTP/1.0" 200 1166
+"GET /static/images/logo.png HTTP/1.0" 200 12120
+"GET /static/images/u6.png HTTP/1.0" 200 454
+"GET /static/js/index.js HTTP/1.0" 200 3743
+"GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+"POST /login/ HTTP/1.0" 200 3343
+"GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+"GET /static/images/logo.png HTTP/1.0" 200 12120
+"GET /static/css/global.css HTTP/1.0" 200 3056
+"GET /static/images/u6.png HTTP/1.0" 200 454
+"GET /static/css/login.css HTTP/1.0" 200 1166
+"GET /static/js/index.js HTTP/1.0" 200 3743
+"GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+"POST /login/ HTTP/1.0" 200 3343
+"GET /static/css/global.css HTTP/1.0" 200 3056
+"GET /static/css/login.css HTTP/1.0" 200 1166
+"GET /static/images/logo.png HTTP/1.0" 200 12120
+"GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+"GET /static/images/u6.png HTTP/1.0" 200 454
+"GET /static/js/index.js HTTP/1.0" 200 3743
+"GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+Not Found: /login/retrieve.html
+"GET /login/retrieve.html HTTP/1.0" 404 4385
+"POST /login/ HTTP/1.0" 200 3343
+"GET /static/css/login.css HTTP/1.0" 200 1166
+"GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+"GET /static/css/global.css HTTP/1.0" 200 3056
+"GET /static/images/logo.png HTTP/1.0" 200 12120
+"GET /static/images/u6.png HTTP/1.0" 200 454
+"GET /static/js/index.js HTTP/1.0" 200 3743
+"GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+"POST /login/ HTTP/1.0" 200 3367
+"GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+"GET /static/images/u6.png HTTP/1.0" 200 454
+"GET /static/css/login.css HTTP/1.0" 200 1166
+"GET /static/images/logo.png HTTP/1.0" 200 12120
+"GET /static/css/global.css HTTP/1.0" 200 3056
+"GET /static/js/index.js HTTP/1.0" 200 3743
+"GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+"POST /login/ HTTP/1.0" 200 3367
+"GET /static/css/login.css HTTP/1.0" 200 1166
+"GET /static/images/logo.png HTTP/1.0" 200 12120
+"GET /static/css/global.css HTTP/1.0" 200 3056
+"GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+"GET /static/images/u6.png HTTP/1.0" 200 454
+"GET /static/js/index.js HTTP/1.0" 200 3743
+"GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+"POST /login/ HTTP/1.0" 200 3367
+"GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+"GET /static/css/global.css HTTP/1.0" 200 3056
+"GET /static/images/u6.png HTTP/1.0" 200 454
+"GET /static/css/login.css HTTP/1.0" 200 1166
+"GET /static/images/logo.png HTTP/1.0" 200 12120
+"GET /static/js/index.js HTTP/1.0" 200 3743
+"GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+"POST /login/ HTTP/1.0" 200 3367
+"GET /static/css/global.css HTTP/1.0" 200 3056
+"GET /static/css/login.css HTTP/1.0" 200 1166
+"GET /static/images/u6.png HTTP/1.0" 200 454
+"GET /static/images/logo.png HTTP/1.0" 200 12120
+"GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+"GET /static/js/index.js HTTP/1.0" 200 3743
+"GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+"POST /login/ HTTP/1.0" 200 3367
+"GET /static/images/logo.png HTTP/1.0" 200 12120
+"GET /static/css/global.css HTTP/1.0" 200 3056
+"GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+"GET /static/images/u6.png HTTP/1.0" 200 454
+"GET /static/css/login.css HTTP/1.0" 200 1166
+"GET /static/js/index.js HTTP/1.0" 200 3743
+"GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+"POST /login/ HTTP/1.0" 200 3367
+"GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+"GET /static/css/login.css HTTP/1.0" 200 1166
+"GET /static/css/global.css HTTP/1.0" 200 3056
+"GET /static/images/u6.png HTTP/1.0" 200 454
+"GET /static/images/logo.png HTTP/1.0" 200 12120
+"GET /static/js/index.js HTTP/1.0" 200 3743
+"GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+"POST /login/ HTTP/1.0" 200 3367
+"GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+"GET /static/images/logo.png HTTP/1.0" 200 12120
+"GET /static/css/login.css HTTP/1.0" 200 1166
+"GET /static/css/global.css HTTP/1.0" 200 3056
+"GET /static/images/u6.png HTTP/1.0" 200 454
+"GET /static/js/index.js HTTP/1.0" 200 3743
+"GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+"GET / HTTP/1.0" 200 5212
+"GET /static/css/global.css HTTP/1.0" 200 3056
+"GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+"GET /static/images/u6.png HTTP/1.0" 200 454
+"GET /static/images/logo.png HTTP/1.0" 200 12120
+"GET /static/css/index.css HTTP/1.0" 200 4242
+"GET /static/images/u22.png HTTP/1.0" 200 941
+"GET /static/images/u28.png HTTP/1.0" 200 1125
+"GET /static/js/index.js HTTP/1.0" 200 3743
+"GET /static/images/1.png HTTP/1.0" 200 430599
+"GET /static/images/u20.png HTTP/1.0" 200 992
+"GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+"GET / HTTP/1.0" 200 5212
+"GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+"GET /static/css/global.css HTTP/1.0" 200 3056
+"GET /static/css/index.css HTTP/1.0" 200 4242
+"GET /static/images/logo.png HTTP/1.0" 200 12120
+"GET /static/images/u6.png HTTP/1.0" 200 454
+"GET /static/js/index.js HTTP/1.0" 200 3743
+"GET /static/images/u22.png HTTP/1.0" 200 941
+"GET /static/images/u28.png HTTP/1.0" 200 1125
+"GET /static/images/1.png HTTP/1.0" 200 430599
+"GET /static/images/u20.png HTTP/1.0" 200 992
+"GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+"GET / HTTP/1.0" 200 5212
+"GET /static/css/global.css HTTP/1.0" 200 3056
+"GET /static/css/index.css HTTP/1.0" 200 4242
+"GET /static/images/u6.png HTTP/1.0" 200 454
+"GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+"GET /static/images/logo.png HTTP/1.0" 200 12120
+"GET /static/images/u28.png HTTP/1.0" 200 1125
+"GET /static/js/index.js HTTP/1.0" 200 3743
+"GET /static/images/u20.png HTTP/1.0" 200 992
+"GET /static/images/1.png HTTP/1.0" 200 430599
+"GET /static/images/u22.png HTTP/1.0" 200 941
+"GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+"GET / HTTP/1.0" 200 7590
+"GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+"GET /static/css/setpassword.css HTTP/1.0" 200 1102
+"GET /static/css/index.css HTTP/1.0" 200 4242
+"GET /static/images/u6.png HTTP/1.0" 200 454
+"GET /static/css/global.css HTTP/1.0" 200 3056
+"GET /static/images/logo.png HTTP/1.0" 200 12120
+"GET /static/js/index.js HTTP/1.0" 200 3743
+"GET /static/images/1.png HTTP/1.0" 200 430599
+"GET /static/images/u20.png HTTP/1.0" 200 992
+"GET /static/images/u28.png HTTP/1.0" 200 1125
+"GET /static/images/u22.png HTTP/1.0" 200 941
+"GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+"GET / HTTP/1.0" 200 7590
+"GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+"GET /static/css/index.css HTTP/1.0" 200 4242
+"GET /static/css/setpassword.css HTTP/1.0" 200 1037
+"GET /static/images/u6.png HTTP/1.0" 200 454
+"GET /static/images/logo.png HTTP/1.0" 200 12120
+"GET /static/css/global.css HTTP/1.0" 200 3056
+"GET /static/images/u28.png HTTP/1.0" 200 1125
+"GET /static/js/index.js HTTP/1.0" 200 3743
+"GET /static/images/1.png HTTP/1.0" 200 430599
+"GET /static/images/u22.png HTTP/1.0" 200 941
+"GET /static/images/u20.png HTTP/1.0" 200 992
+"GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+"GET /login/ HTTP/1.0" 200 3367
+"GET /static/css/login.css HTTP/1.0" 304 0
+"GET /static/js/index.js HTTP/1.0" 304 0
+"GET /login/ HTTP/1.0" 200 3367
+"GET /static/css/bootstrap.css HTTP/1.0" 304 0
+"GET /static/images/u6.png HTTP/1.0" 304 0
+"GET /static/images/logo.png HTTP/1.0" 304 0
+"GET /static/css/global.css HTTP/1.0" 304 0
+"GET /static/js/index.js HTTP/1.0" 304 0
+"POST /login/ HTTP/1.0" 200 3367
+"GET / HTTP/1.0" 200 7590
+"GET /static/css/index.css HTTP/1.0" 304 0
+"GET /static/images/u28.png HTTP/1.0" 304 0
+"GET /static/images/1.png HTTP/1.0" 304 0
+"GET /static/css/setpassword.css HTTP/1.0" 304 0
+"GET /static/images/u22.png HTTP/1.0" 304 0
+"GET /static/images/u20.png HTTP/1.0" 304 0
+"GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+"GET / HTTP/1.0" 200 7590
+"GET /static/css/setpassword.css HTTP/1.0" 304 0
+"GET /static/js/index.js HTTP/1.0" 304 0
+"GET /signup/ HTTP/1.0" 200 4033
+"GET /static/css/register.css HTTP/1.0" 304 0
+"GET /signup/?rcode=qlf HTTP/1.0" 200 4045
+"GET /login/ HTTP/1.0" 200 3367
+"GET /static/css/login.css HTTP/1.0" 304 0
+"POST /login/ HTTP/1.0" 200 3367
+"GET /login/ HTTP/1.0" 200 3367
+"GET / HTTP/1.0" 200 7590
+"GET /login/ HTTP/1.0" 200 3367
+"GET /signup/ HTTP/1.0" 200 4033
+"GET /login/ HTTP/1.0" 200 3367
+"GET / HTTP/1.0" 200 7590
+"GET /login/ HTTP/1.0" 200 3367
+"GET / HTTP/1.0" 200 7590
+"GET / HTTP/1.0" 200 7884
+"GET /static/css/bootstrap.css HTTP/1.0" 304 0
+"GET /static/css/index.css HTTP/1.0" 304 0
+"GET /static/images/u6.png HTTP/1.0" 304 0
+"GET /static/css/global.css HTTP/1.0" 304 0
+"GET /static/images/logo.png HTTP/1.0" 304 0
+"GET /static/css/setpassword.css HTTP/1.0" 304 0
+"GET /static/js/index.js HTTP/1.0" 304 0
+"GET /static/images/1.png HTTP/1.0" 304 0
+"GET /static/images/u22.png HTTP/1.0" 304 0
+"GET /static/images/u28.png HTTP/1.0" 304 0
+"GET /static/images/u20.png HTTP/1.0" 304 0
+Internal Server Error: /reset_password/805042956@qq.com/
+Traceback (most recent call last):
+  File "/opt/apps/anaconda3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/opt/apps/anaconda3/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/opt/apps/anaconda3/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/flytoken/base/views.py", line 192, in reset_password
+    u = User.objects.get(email = name)
+  File "/opt/apps/anaconda3/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/opt/apps/anaconda3/lib/python3.6/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+base.models.DoesNotExist: User matching query does not exist.
+"GET /reset_password/805042956@qq.com/ HTTP/1.0" 500 72760
+"GET / HTTP/1.0" 200 7884
+Not Found: /reset_password/
+"GET /reset_password/ HTTP/1.0" 404 4373
+"GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+Internal Server Error: /reset_password/805042956@qq.com/
+Traceback (most recent call last):
+  File "/opt/apps/anaconda3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/opt/apps/anaconda3/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/opt/apps/anaconda3/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/flytoken/base/views.py", line 192, in reset_password
+    u = User.objects.get(email = name)
+  File "/opt/apps/anaconda3/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/opt/apps/anaconda3/lib/python3.6/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+base.models.DoesNotExist: User matching query does not exist.
+"GET /reset_password/805042956@qq.com/ HTTP/1.0" 500 73021
+Internal Server Error: /reset_password/805042956@qq.com/
+Traceback (most recent call last):
+  File "/opt/apps/anaconda3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/opt/apps/anaconda3/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/opt/apps/anaconda3/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/flytoken/base/views.py", line 192, in reset_password
+    u = User.objects.get(email = name)
+  File "/opt/apps/anaconda3/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/opt/apps/anaconda3/lib/python3.6/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+base.models.DoesNotExist: User matching query does not exist.
+"GET /reset_password/805042956@qq.com/ HTTP/1.0" 500 72841
+"GET /login/ HTTP/1.0" 200 3367
+"POST /login/ HTTP/1.0" 200 3367
+"POST /login/ HTTP/1.0" 200 3367
+"POST /login/ HTTP/1.0" 200 3367
+"GET /static/js/index.js HTTP/1.0" 304 0
+"GET / HTTP/1.0" 200 7884
+"GET /static/css/setpassword.css HTTP/1.0" 304 0
+Internal Server Error: /reset_password/805042956@qq.com/
+Traceback (most recent call last):
+  File "/opt/apps/anaconda3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/opt/apps/anaconda3/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/opt/apps/anaconda3/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/flytoken/base/views.py", line 192, in reset_password
+    u = User.objects.get(email = name)
+  File "/opt/apps/anaconda3/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/opt/apps/anaconda3/lib/python3.6/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+base.models.DoesNotExist: User matching query does not exist.
+"GET /reset_password/805042956@qq.com/ HTTP/1.0" 500 72760
+"GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+Internal Server Error: /reset_password/805042956@qq.com/
+Traceback (most recent call last):
+  File "/opt/apps/anaconda3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/opt/apps/anaconda3/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/opt/apps/anaconda3/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/flytoken/base/views.py", line 192, in reset_password
+    u = User.objects.get(email = name)
+  File "/opt/apps/anaconda3/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/opt/apps/anaconda3/lib/python3.6/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+base.models.DoesNotExist: User matching query does not exist.
+"GET /reset_password/805042956@qq.com/ HTTP/1.0" 500 73021
+Internal Server Error: /reset_password/805042956@qq.com/
+Traceback (most recent call last):
+  File "/opt/apps/anaconda3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/opt/apps/anaconda3/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/opt/apps/anaconda3/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/flytoken/base/views.py", line 192, in reset_password
+    u = User.objects.get(email = name)
+  File "/opt/apps/anaconda3/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/opt/apps/anaconda3/lib/python3.6/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+base.models.DoesNotExist: User matching query does not exist.
+"GET /reset_password/805042956@qq.com/ HTTP/1.0" 500 72841
+"GET / HTTP/1.0" 200 7884
+"GET /static/css/setpassword.css HTTP/1.0" 304 0
+"GET /static/js/index.js HTTP/1.0" 304 0
+"GET /login/ HTTP/1.0" 200 3367
+"GET /static/css/login.css HTTP/1.0" 304 0
+"POST /login/ HTTP/1.0" 200 3367
+"GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+"POST /login/ HTTP/1.0" 200 3367
+"GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+"GET /static/images/u6.png HTTP/1.0" 200 454
+"GET /static/css/login.css HTTP/1.0" 200 1166
+"GET /static/images/logo.png HTTP/1.0" 200 12120
+"GET /static/css/global.css HTTP/1.0" 200 3056
+"GET /static/js/index.js HTTP/1.0" 200 3743
+"GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+"GET /activate/Mg/FLPRE4z8-c0ebc92df2da8ff91804/ HTTP/1.0" 200 2335
+"GET / HTTP/1.0" 200 7884
+"GET /static/css/index.css HTTP/1.0" 304 0
+"GET /static/images/u28.png HTTP/1.0" 304 0
+"GET /static/images/1.png HTTP/1.0" 304 0
+"GET /static/css/setpassword.css HTTP/1.0" 304 0
+"GET /static/images/u22.png HTTP/1.0" 304 0
+"GET /static/images/u20.png HTTP/1.0" 304 0
+"GET /signup/ HTTP/1.0" 200 4033
+"GET /static/css/register.css HTTP/1.0" 304 0
+"GET /static/js/index.js HTTP/1.0" 304 0
+"GET /login/ HTTP/1.0" 200 3367
+"POST /login/ HTTP/1.0" 200 3367
+"GET /signup/ HTTP/1.0" 200 4033
+message: MTg, 4za-8549bc31d9d7903ac4ad
+"POST /signup/ HTTP/1.0" 200 2706
+"GET /static/css/validate.css HTTP/1.0" 200 715
+"GET /static/images/validate.png HTTP/1.0" 200 3357
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.0" 404 4361
+"GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+"POST /signup/ HTTP/1.0" 200 4154
+"GET /static/css/register.css HTTP/1.0" 200 1379
+"GET /static/images/logo.png HTTP/1.0" 200 12120
+"GET /static/images/u6.png HTTP/1.0" 200 454
+"GET /static/css/global.css HTTP/1.0" 200 3056
+"GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+"GET /static/js/index.js HTTP/1.0" 200 3743
+"GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+"GET /login/ HTTP/1.0" 200 3367
+"GET /static/css/login.css HTTP/1.0" 304 0
+"POST /login/ HTTP/1.0" 200 3367
+"GET / HTTP/1.0" 200 7884
+"GET /static/css/index.css HTTP/1.0" 304 0
+"GET /static/css/setpassword.css HTTP/1.0" 304 0
+"GET /static/images/1.png HTTP/1.0" 304 0
+"GET /static/images/u28.png HTTP/1.0" 304 0
+"GET /static/images/u20.png HTTP/1.0" 304 0
+"GET /static/images/u22.png HTTP/1.0" 304 0
+"GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+"GET / HTTP/1.0" 200 7884
+"GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+"GET /static/css/index.css HTTP/1.0" 200 4242
+"GET /static/css/setpassword.css HTTP/1.0" 200 1037
+"GET /static/css/global.css HTTP/1.0" 200 3056
+"GET /static/images/logo.png HTTP/1.0" 200 12120
+"GET /static/images/u6.png HTTP/1.0" 200 454
+"GET /static/js/index.js HTTP/1.0" 200 3743
+"GET /static/images/u22.png HTTP/1.0" 200 941
+"GET /static/images/u20.png HTTP/1.0" 200 992
+"GET /static/images/u28.png HTTP/1.0" 200 1125
+"GET /static/images/1.png HTTP/1.0" 200 430599
+"GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+"GET /login HTTP/1.0" 301 0
+"GET /login/ HTTP/1.0" 200 3367
+"GET /static/css/global.css HTTP/1.0" 200 3056
+"GET /static/images/logo.png HTTP/1.0" 200 12120
+"GET /static/images/u6.png HTTP/1.0" 200 454
+"GET /static/css/login.css HTTP/1.0" 200 1166
+"GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+"GET /static/js/index.js HTTP/1.0" 200 3743
+"GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+"POST /login/ HTTP/1.0" 200 3367
+"GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+"GET /static/css/login.css HTTP/1.0" 200 1166
+"GET /static/images/u6.png HTTP/1.0" 200 454
+"GET /static/images/logo.png HTTP/1.0" 200 12120
+"GET /static/css/global.css HTTP/1.0" 200 3056
+"GET /static/js/index.js HTTP/1.0" 200 3743
+"GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+Forbidden (CSRF cookie not set.): /login/
+"POST /login/ HTTP/1.0" 403 2868
+Forbidden (CSRF cookie not set.): /login/
+"POST /login/ HTTP/1.0" 403 2868
+Forbidden (CSRF cookie not set.): /login/
+"POST /login/ HTTP/1.0" 403 2868
+"GET /activate/Mg/FLPRE4z8-c0ebc92df2da8ff91804 HTTP/1.0" 301 0
+"GET /activate/Mg/FLPRE4z8-c0ebc92df2da8ff91804 HTTP/1.0" 301 0
+"GET /activate/Mg/FLPRE4z8-c0ebc92df2da8ff91804/ HTTP/1.0" 200 2335
+"GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+"GET /static/css/global.css HTTP/1.0" 200 3056
+"GET /static/js/index.js HTTP/1.0" 200 3743
+"GET /static/images/logo.png HTTP/1.0" 200 12120
+"GET /static/images/u6.png HTTP/1.0" 200 454
+"GET / HTTP/1.0" 200 7884
+"GET /static/css/setpassword.css HTTP/1.0" 200 1037
+"GET /static/js/index.js HTTP/1.0" 200 3743
+"GET /login/ HTTP/1.0" 200 3367
+"POST /login/ HTTP/1.0" 200 3367
+Forbidden (CSRF cookie not set.): /login/
+"POST /login/ HTTP/1.0" 403 2868
+Forbidden (CSRF cookie not set.): /login/
+"POST /login/ HTTP/1.0" 403 2868
+"GET /login/ HTTP/1.0" 200 3367
+"GET /static/css/bootstrap.css HTTP/1.0" 304 0
+"GET /static/images/u6.png HTTP/1.0" 304 0
+"GET /static/js/index.js HTTP/1.0" 304 0
+"GET /static/css/global.css HTTP/1.0" 304 0
+"GET /static/css/login.css HTTP/1.0" 304 0
+"GET /static/images/logo.png HTTP/1.0" 304 0
+"POST /login/ HTTP/1.0" 200 3367
+"POST /login/ HTTP/1.0" 200 3367
+"GET / HTTP/1.0" 200 7884
+"GET /static/css/index.css HTTP/1.0" 304 0
+"GET /static/images/u28.png HTTP/1.0" 304 0
+"GET /static/css/setpassword.css HTTP/1.0" 304 0
+"GET /static/images/u20.png HTTP/1.0" 304 0
+"GET /static/images/u22.png HTTP/1.0" 304 0
+"GET /static/images/1.png HTTP/1.0" 304 0
+"GET / HTTP/1.0" 200 7884
+"GET / HTTP/1.0" 200 7884
+"GET /login/ HTTP/1.0" 200 3367
+"POST /login/ HTTP/1.0" 200 3367
+"GET / HTTP/1.0" 200 7884
+"GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+"GET /static/images/1.png HTTP/1.0" 200 430599
+"GET /static/images/u6.png HTTP/1.0" 200 454
+"GET /static/css/setpassword.css HTTP/1.0" 200 1037
+"GET /static/css/index.css HTTP/1.0" 200 4242
+"GET /static/js/index.js HTTP/1.0" 200 3743
+"GET /static/css/global.css HTTP/1.0" 200 3056
+"GET /static/images/u28.png HTTP/1.0" 200 1125
+"GET /static/images/u22.png HTTP/1.0" 200 941
+"GET /static/images/u20.png HTTP/1.0" 200 992
+"GET /static/images/logo.png HTTP/1.0" 200 12120
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.0" 404 4361
+"GET / HTTP/1.0" 200 7884
+"GET /static/css/bootstrap.css HTTP/1.0" 304 0
+"GET /static/css/index.css HTTP/1.0" 304 0
+"GET /static/css/setpassword.css HTTP/1.0" 304 0
+"GET /static/images/u6.png HTTP/1.0" 304 0
+"GET /static/css/global.css HTTP/1.0" 304 0
+"GET /static/js/index.js HTTP/1.0" 304 0
+"GET /static/images/logo.png HTTP/1.0" 304 0
+"GET /static/images/1.png HTTP/1.0" 304 0
+"GET /static/images/u28.png HTTP/1.0" 304 0
+"GET /static/images/u22.png HTTP/1.0" 304 0
+"GET /static/images/u20.png HTTP/1.0" 304 0
+"GET /login/ HTTP/1.0" 200 3367
+"GET /static/css/login.css HTTP/1.0" 304 0
+"POST /login/ HTTP/1.0" 200 3367
+"GET / HTTP/1.0" 200 7884
+"GET /login/ HTTP/1.0" 200 3367
+"GET /login/ HTTP/1.0" 200 3367
+"POST /login/ HTTP/1.0" 200 3367
+"GET / HTTP/1.0" 200 7884
+"GET / HTTP/1.0" 200 7884
+"GET /static/js/index.js HTTP/1.0" 200 3743
+"GET /static/css/global.css HTTP/1.0" 200 3056
+"GET /static/css/index.css HTTP/1.0" 200 4242
+"GET /static/images/u6.png HTTP/1.0" 200 454
+"GET /static/images/logo.png HTTP/1.0" 200 12120
+"GET /static/css/setpassword.css HTTP/1.0" 200 1037
+"GET / HTTP/1.0" 200 7884
+"GET /static/images/u22.png HTTP/1.0" 200 941
+"GET /static/images/u28.png HTTP/1.0" 200 1125
+"GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+"GET /static/images/u20.png HTTP/1.0" 200 992
+"GET /static/images/1.png HTTP/1.0" 200 430599
+"GET /login HTTP/1.0" 301 0
+"GET /login/ HTTP/1.0" 200 3367
+"GET /static/css/login.css HTTP/1.0" 200 1166
+"POST /login/ HTTP/1.0" 200 3367
+"GET /signup/ HTTP/1.0" 200 4033
+"GET /static/css/register.css HTTP/1.0" 304 0
+message: MTk, 4za-24dfc66c60aa3b79a980
+"POST /signup/ HTTP/1.0" 200 3123
+"GET /static/css/validate.css HTTP/1.0" 304 0
+"GET /static/images/validate.png HTTP/1.0" 304 0
+"GET /resend_activation/805042956@qq.com/ HTTP/1.0" 200 26
+"GET / HTTP/1.0" 200 7884
+"GET /activate/Mg/FLPRE4za-2da8ee8915cb793cb3e8/ HTTP/1.0" 200 2335
+"GET / HTTP/1.0" 200 9961
+"GET /static/css/setpassword.css HTTP/1.0" 200 1037
+"GET /static/js/index.js HTTP/1.0" 200 3743
+"GET /rcode/ HTTP/1.0" 200 30
+"GET /bonus/ HTTP/1.0" 200 262
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.0" 404 4361
+"GET / HTTP/1.0" 200 7884
+"GET /static/css/setpassword.css HTTP/1.0" 304 0
+"GET /static/js/index.js HTTP/1.0" 304 0
+"GET /login/ HTTP/1.0" 200 3367
+"POST /login/ HTTP/1.0" 200 3367
+"GET /activate/MTk/4za-24dfc66c60aa3b79a980/ HTTP/1.0" 302 0
+"GET / HTTP/1.0" 200 9979
+"GET /rcode/ HTTP/1.0" 200 30
+"GET /bonus/ HTTP/1.0" 200 252
+"GET / HTTP/1.0" 200 9979
+"GET /rcode/ HTTP/1.0" 200 30
+"GET /bonus/ HTTP/1.0" 200 252
+Forbidden (CSRF token missing or incorrect.): /login/
+"POST /login/ HTTP/1.0" 403 2513
+"GET / HTTP/1.0" 200 9979
+"GET /rcode/ HTTP/1.0" 200 30
+"GET /bonus/ HTTP/1.0" 200 252
+"GET /logout/ HTTP/1.0" 302 0
+"GET / HTTP/1.0" 200 7884
+"GET /login/ HTTP/1.0" 200 3367
+"POST /login/ HTTP/1.0" 302 0
+"GET /accounts/profile/ HTTP/1.0" 302 0
+"GET / HTTP/1.0" 200 9979
+"GET /rcode/ HTTP/1.0" 200 30
+"GET /bonus/ HTTP/1.0" 200 252
+"GET / HTTP/1.0" 200 9979
+"GET /static/css/bootstrap.css HTTP/1.0" 304 0
+"GET /static/css/index.css HTTP/1.0" 304 0
+"GET /static/images/u6.png HTTP/1.0" 304 0
+"GET /static/images/logo.png HTTP/1.0" 304 0
+"GET /static/css/global.css HTTP/1.0" 304 0
+"GET /static/images/1.png HTTP/1.0" 304 0
+"GET /static/images/u28.png HTTP/1.0" 304 0
+"GET /static/images/u22.png HTTP/1.0" 304 0
+"GET /static/images/u20.png HTTP/1.0" 304 0
+"GET /rcode/ HTTP/1.0" 200 30
+"GET /bonus/ HTTP/1.0" 200 252
+"GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+"GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+"GET / HTTP/1.0" 200 9979
+"GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+"GET /static/css/index.css HTTP/1.0" 200 4242
+"GET /static/css/global.css HTTP/1.0" 200 3056
+"GET /static/css/setpassword.css HTTP/1.0" 200 1037
+"GET /static/images/logo.png HTTP/1.0" 200 12120
+"GET /static/images/u6.png HTTP/1.0" 200 454
+"GET /static/js/index.js HTTP/1.0" 200 3743
+"GET /static/images/u28.png HTTP/1.0" 200 1125
+"GET /static/images/1.png HTTP/1.0" 200 430599
+"GET /static/images/u20.png HTTP/1.0" 200 992
+"GET /static/images/u22.png HTTP/1.0" 200 941
+"GET /rcode HTTP/1.0" 301 0
+"GET /bonus HTTP/1.0" 301 0
+"GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+"GET /rcode/ HTTP/1.0" 200 30
+"GET /bonus/ HTTP/1.0" 200 252
+"GET / HTTP/1.0" 200 9979
+"GET /static/css/index.css HTTP/1.0" 200 4242
+"GET /static/css/setpassword.css HTTP/1.0" 200 1037
+"GET /static/images/logo.png HTTP/1.0" 200 12120
+"GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+"GET /static/css/global.css HTTP/1.0" 200 3056
+"GET /static/images/u6.png HTTP/1.0" 200 454
+"GET /static/images/u22.png HTTP/1.0" 200 941
+"GET /static/images/u20.png HTTP/1.0" 200 992
+"GET /static/images/1.png HTTP/1.0" 200 430599
+"GET /static/images/u28.png HTTP/1.0" 200 1125
+"GET /static/js/index.js HTTP/1.0" 200 3743
+"GET /rcode HTTP/1.0" 301 0
+"GET /bonus HTTP/1.0" 301 0
+"GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+"GET /bonus/ HTTP/1.0" 200 252
+"GET /rcode/ HTTP/1.0" 200 30
+"GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+"GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+"GET /activate/MTk/4za-24dfc66c60aa3b79a980 HTTP/1.0" 301 0
+"GET /activate/MTk/4za-24dfc66c60aa3b79a980 HTTP/1.0" 301 0
+"GET /activate/MTk/4za-24dfc66c60aa3b79a980/ HTTP/1.0" 200 2335
+"GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+"GET /static/js/index.js HTTP/1.0" 200 3743
+"GET /static/images/logo.png HTTP/1.0" 200 12120
+"GET /static/images/u6.png HTTP/1.0" 200 454
+"GET /static/images/logo.png HTTP/1.0" 200 12120
+"GET /static/css/global.css HTTP/1.0" 200 3056
+"GET / HTTP/1.0" 200 10366
+"GET /static/css/index.css HTTP/1.0" 200 4242
+"GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+"GET /static/css/setpassword.css HTTP/1.0" 200 1037
+"GET /static/css/global.css HTTP/1.0" 200 3056
+"GET /static/js/index.js HTTP/1.0" 200 3743
+"GET /static/images/logo.png HTTP/1.0" 200 12120
+"GET /static/images/1.png HTTP/1.0" 200 430599
+"GET /static/images/u6.png HTTP/1.0" 200 454
+"GET /static/images/u22.png HTTP/1.0" 200 941
+"GET /static/images/u20.png HTTP/1.0" 200 992
+"GET /static/images/u28.png HTTP/1.0" 200 1125
+"GET /bonus HTTP/1.0" 301 0
+"GET /rcode HTTP/1.0" 301 0
+"GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+"GET /rcode/ HTTP/1.0" 200 30
+"GET /bonus/ HTTP/1.0" 200 252
+"GET / HTTP/1.0" 200 10363
+"GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+"GET /static/css/index.css HTTP/1.0" 200 4242
+"GET /static/css/global.css HTTP/1.0" 200 3056
+"GET /static/css/setpassword.css HTTP/1.0" 200 1037
+"GET /static/images/logo.png HTTP/1.0" 200 12120
+"GET /static/images/u6.png HTTP/1.0" 200 454
+"GET /static/js/index.js HTTP/1.0" 200 3743
+"GET /static/images/u20.png HTTP/1.0" 200 992
+"GET /static/images/1.png HTTP/1.0" 200 430599
+"GET /static/images/u28.png HTTP/1.0" 200 1125
+"GET /static/images/u22.png HTTP/1.0" 200 941
+"GET /rcode HTTP/1.0" 301 0
+"GET /bonus HTTP/1.0" 301 0
+"GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+"GET /rcode/ HTTP/1.0" 200 30
+"GET /bonus/ HTTP/1.0" 200 252
+"GET / HTTP/1.0" 200 10363
+"GET /static/css/global.css HTTP/1.0" 200 3056
+"GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+"GET /static/css/index.css HTTP/1.0" 200 4242
+"GET /static/css/setpassword.css HTTP/1.0" 200 1037
+"GET /static/images/u6.png HTTP/1.0" 200 454
+"GET /static/images/logo.png HTTP/1.0" 200 12120
+"GET /static/images/1.png HTTP/1.0" 200 430599
+"GET /static/js/index.js HTTP/1.0" 200 3743
+"GET /static/images/u28.png HTTP/1.0" 200 1125
+"GET /static/images/u22.png HTTP/1.0" 200 941
+"GET /static/images/u20.png HTTP/1.0" 200 992
+"GET /rcode HTTP/1.0" 301 0
+"GET /bonus HTTP/1.0" 301 0
+"GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+"GET /rcode/ HTTP/1.0" 200 30
+"GET /bonus/ HTTP/1.0" 200 252
+"GET / HTTP/1.0" 200 10363
+"GET /static/css/index.css HTTP/1.0" 200 4242
+"GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+"GET /static/js/index.js HTTP/1.0" 200 3743
+"GET /static/css/setpassword.css HTTP/1.0" 200 1037
+"GET /static/images/u6.png HTTP/1.0" 200 454
+"GET /static/css/global.css HTTP/1.0" 200 3056
+"GET /static/images/logo.png HTTP/1.0" 200 12120
+"GET /static/images/1.png HTTP/1.0" 200 430599
+"GET /static/images/u22.png HTTP/1.0" 200 941
+"GET /static/images/u20.png HTTP/1.0" 200 992
+"GET /static/images/u28.png HTTP/1.0" 200 1125
+"GET /rcode HTTP/1.0" 301 0
+"GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+"GET /bonus HTTP/1.0" 301 0
+"GET /rcode/ HTTP/1.0" 200 30
+"GET /bonus/ HTTP/1.0" 200 252
+"GET / HTTP/1.0" 200 10445
+"GET /static/css/global.css HTTP/1.0" 200 3056
+"GET /static/css/setpassword.css HTTP/1.0" 200 1037
+"GET /static/css/index.css HTTP/1.0" 200 4242
+"GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+"GET /static/images/u28.png HTTP/1.0" 200 1125
+"GET /static/js/index.js HTTP/1.0" 200 3743
+"GET /static/images/logo.png HTTP/1.0" 200 12120
+"GET /static/images/u6.png HTTP/1.0" 200 454
+"GET /static/images/1.png HTTP/1.0" 200 430599
+"GET /static/images/u22.png HTTP/1.0" 200 941
+"GET /static/images/u20.png HTTP/1.0" 200 992
+"GET /bonus HTTP/1.0" 301 0
+"GET /rcode HTTP/1.0" 301 0
+"GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+"GET /rcode/ HTTP/1.0" 200 30
+"GET /bonus/ HTTP/1.0" 200 252
+"GET / HTTP/1.0" 200 10445
+"GET /static/css/setpassword.css HTTP/1.0" 200 1037
+"GET /static/css/global.css HTTP/1.0" 200 3056
+"GET /static/css/index.css HTTP/1.0" 200 4242
+"GET /static/images/u6.png HTTP/1.0" 200 454
+"GET /static/images/logo.png HTTP/1.0" 200 12120
+"GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+"GET /static/images/u22.png HTTP/1.0" 200 941
+"GET /static/images/u20.png HTTP/1.0" 200 992
+"GET /static/images/1.png HTTP/1.0" 200 430599
+"GET /static/js/index.js HTTP/1.0" 200 3743
+"GET /static/images/u28.png HTTP/1.0" 200 1125
+"GET /rcode HTTP/1.0" 301 0
+"GET /bonus HTTP/1.0" 301 0
+"GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+"GET /rcode/ HTTP/1.0" 200 30
+"GET /bonus/ HTTP/1.0" 200 252
+"GET / HTTP/1.0" 200 10445
+"GET /static/css/setpassword.css HTTP/1.0" 200 1037
+"GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+"GET /static/css/global.css HTTP/1.0" 200 3056
+"GET /static/images/logo.png HTTP/1.0" 200 12120
+"GET /static/css/index.css HTTP/1.0" 200 4242
+"GET /static/images/u6.png HTTP/1.0" 200 454
+"GET /static/images/u28.png HTTP/1.0" 200 1125
+"GET /static/js/index.js HTTP/1.0" 200 3743
+"GET /static/images/1.png HTTP/1.0" 200 430599
+"GET /static/images/u20.png HTTP/1.0" 200 992
+"GET /static/images/u22.png HTTP/1.0" 200 941
+"GET /bonus HTTP/1.0" 301 0
+"GET /rcode HTTP/1.0" 301 0
+"GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+"GET /bonus/ HTTP/1.0" 200 252
+"GET /rcode/ HTTP/1.0" 200 30
+"GET / HTTP/1.0" 200 10445
+"GET /rcode/ HTTP/1.0" 200 30
+"GET /bonus/ HTTP/1.0" 200 252
+"GET /signup/?rcode=QGsR HTTP/1.0" 200 3971
+"GET /static/css/register.css HTTP/1.0" 304 0
+"GET /signup/?rcode=QGsR HTTP/1.0" 200 4046
+"GET / HTTP/1.0" 200 10427
+"GET /static/css/setpassword.css HTTP/1.0" 304 0
+"GET /static/js/index.js HTTP/1.0" 304 0
+"GET /rcode/ HTTP/1.0" 200 30
+"GET /bonus/ HTTP/1.0" 200 262
+"GET / HTTP/1.0" 200 10445
+"GET /rcode/ HTTP/1.0" 200 30
+"GET /bonus/ HTTP/1.0" 200 252
+"GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+"GET /signup/?rcode=QGsR HTTP/1.0" 200 4046
+"GET /static/js/index.js%20 HTTP/1.0" 404 1663
+"GET / HTTP/1.0" 200 10464
+"GET /static/css/index.css HTTP/1.0" 200 4242
+"GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+"GET /static/images/u6.png HTTP/1.0" 200 454
+"GET /static/images/logo.png HTTP/1.0" 200 12120
+"GET /static/css/global.css HTTP/1.0" 200 3056
+"GET /static/css/setpassword.css HTTP/1.0" 200 1037
+"GET /static/images/u22.png HTTP/1.0" 200 941
+"GET /static/images/1.png HTTP/1.0" 200 430599
+"GET /static/images/u20.png HTTP/1.0" 200 992
+"GET /static/js/index.js HTTP/1.0" 200 3743
+"GET /static/images/u28.png HTTP/1.0" 200 1125
+"GET /rcode HTTP/1.0" 301 0
+"GET /bonus HTTP/1.0" 301 0
+"GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+"GET /rcode/ HTTP/1.0" 200 30
+"GET /bonus/ HTTP/1.0" 200 252
+"GET / HTTP/1.0" 200 10446
+"GET /rcode/ HTTP/1.0" 200 30
+"GET /bonus/ HTTP/1.0" 200 262
+"GET / HTTP/1.0" 200 10468
+"GET /static/css/global.css HTTP/1.0" 200 3056
+"GET /static/css/index.css HTTP/1.0" 200 4242
+"GET /static/images/logo.png HTTP/1.0" 200 12120
+"GET /static/css/setpassword.css HTTP/1.0" 200 1037
+"GET /static/images/u6.png HTTP/1.0" 200 454
+"GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+"GET /static/images/u22.png HTTP/1.0" 200 941
+"GET /static/images/u20.png HTTP/1.0" 200 992
+"GET /static/js/index.js HTTP/1.0" 200 3743
+"GET /static/images/u28.png HTTP/1.0" 200 1125
+"GET /static/images/1.png HTTP/1.0" 200 430599
+"GET /rcode HTTP/1.0" 301 0
+"GET /bonus HTTP/1.0" 301 0
+"GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+"GET /rcode/ HTTP/1.0" 200 30
+"GET /bonus/ HTTP/1.0" 200 252
+"GET / HTTP/1.0" 200 10468
+"GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+"GET /static/images/logo.png HTTP/1.0" 200 12120
+"GET /static/css/setpassword.css HTTP/1.0" 200 1037
+"GET /static/css/index.css HTTP/1.0" 200 4242
+"GET /static/css/global.css HTTP/1.0" 200 3056
+"GET /static/images/u6.png HTTP/1.0" 200 454
+"GET /static/images/u22.png HTTP/1.0" 200 941
+"GET /static/images/u20.png HTTP/1.0" 200 992
+"GET /static/images/1.png HTTP/1.0" 200 430599
+"GET /static/images/u28.png HTTP/1.0" 200 1125
+"GET /static/js/index.js HTTP/1.0" 200 3743
+"GET /bonus HTTP/1.0" 301 0
+"GET /rcode HTTP/1.0" 301 0
+"GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+"GET /rcode/ HTTP/1.0" 200 30
+"GET /bonus/ HTTP/1.0" 200 252
+"GET / HTTP/1.0" 200 10481
+"GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+"GET /static/css/setpassword.css HTTP/1.0" 200 1037
+"GET /static/css/index.css HTTP/1.0" 200 4242
+"GET /static/images/logo.png HTTP/1.0" 200 12120
+"GET /static/images/u6.png HTTP/1.0" 200 454
+"GET /static/css/global.css HTTP/1.0" 200 3056
+"GET /static/images/u28.png HTTP/1.0" 200 1125
+"GET /static/images/u22.png HTTP/1.0" 200 941
+"GET /static/images/u20.png HTTP/1.0" 200 992
+"GET /static/images/1.png HTTP/1.0" 200 430599
+"GET /static/js/index.js HTTP/1.0" 200 3743
+"GET /bonus HTTP/1.0" 301 0
+"GET /rcode HTTP/1.0" 301 0
+"GET /static/css/bootstrap.css.map HTTP/1.0" 404 1688
+"GET /rcode/ HTTP/1.0" 200 30
+"GET /bonus/ HTTP/1.0" 200 252
+Not Found: /rocode
+"GET /rocode HTTP/1.0" 404 4346
+"GET /rcode/ HTTP/1.0" 200 30
+"GET /bonus/ HTTP/1.0" 200 262
+"GET /logout/ HTTP/1.0" 302 0
+"GET / HTTP/1.0" 200 8273
+"GET /login/ HTTP/1.0" 200 3367
+"GET /signup/ HTTP/1.0" 200 4033
+"GET /login/ HTTP/1.0" 200 3367
+"POST /login/ HTTP/1.0" 302 0
+"GET /accounts/profile/ HTTP/1.0" 302 0
+"GET / HTTP/1.0" 200 10463
+"GET /rcode/ HTTP/1.0" 200 30
+"GET /bonus/ HTTP/1.0" 200 252
+"GET /bonus/ HTTP/1.0" 200 252
+"GET /rcode/ HTTP/1.0" 200 30
+"GET /signup/ HTTP/1.0" 200 3940
+message: MjA, 4za-4509a36f4f34f75df61a
+"POST /signup/ HTTP/1.0" 200 3087
+"GET /static/css/validate.css HTTP/1.0" 200 715
+"GET /activate/MjA/4za-4509a36f4f34f75df61a HTTP/1.0" 301 0
+/opt/apps/anaconda3/lib/python3.6/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField AuditLog.created_time received a naive datetime (2018-09-03 23:31:40.605564) while time zone support is active.
+  RuntimeWarning)
+/opt/apps/anaconda3/lib/python3.6/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField AuditLog.created_time received a naive datetime (2018-09-03 23:31:40.632469) while time zone support is active.
+  RuntimeWarning)
+"GET /activate/MjA/4za-4509a36f4f34f75df61a/ HTTP/1.0" 302 0
+"GET / HTTP/1.0" 200 10463
+"GET /bonus/ HTTP/1.0" 200 252
+"GET /rcode/ HTTP/1.0" 200 30
+"GET /logout/ HTTP/1.0" 302 0
+"GET / HTTP/1.0" 200 8273
+"GET /login/ HTTP/1.0" 200 3367
+"GET /login/ HTTP/1.0" 200 3367
+"POST /login/ HTTP/1.0" 302 0
+"GET /accounts/profile/ HTTP/1.0" 302 0
+"GET / HTTP/1.0" 200 10463
+"GET /rcode/ HTTP/1.0" 200 30
+"GET /bonus/ HTTP/1.0" 200 272
+"GET /logout/ HTTP/1.0" 302 0
+"GET / HTTP/1.0" 200 8273
+"GET / HTTP/1.0" 200 10463
+"GET /static/js/index.js HTTP/1.0" 304 0
+"GET /static/css/setpassword.css HTTP/1.0" 304 0
+"GET /rcode/ HTTP/1.0" 200 30
+"GET /bonus/ HTTP/1.0" 200 272
+"GET / HTTP/1.0" 200 10463
+"GET /rcode/ HTTP/1.0" 200 30
+"GET /bonus/ HTTP/1.0" 200 272
+"GET /signup/?rcode=QGsR HTTP/1.0" 200 4046
+"GET /static/css/bootstrap.css HTTP/1.0" 200 146022
+"GET /static/css/register.css HTTP/1.0" 200 1379
+"GET /static/css/global.css HTTP/1.0" 200 3056
+"GET /static/images/logo.png HTTP/1.0" 200 12120
+"GET /static/js/index.js HTTP/1.0" 200 3743
+"GET /static/images/u6.png HTTP/1.0" 200 454
+"GET /signup/?rcode=QGsR HTTP/1.0" 200 4046
+"GET /static/css/register.css HTTP/1.0" 200 1379
+"GET /static/js/index.js HTTP/1.0" 304 0
+"GET /login/ HTTP/1.0" 200 3367

@@ -1,0 +1,210 @@
+{% extends 'base.html' %}
+
+{% block title %}
+flytoken-首页
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="//flytoken.pro/static/css/index.css">
+<link rel="stylesheet" href="//flytoken.pro/static/css/setpassword.css">
+{% endblock %}
+
+{% block content %}
+
+{% if user.is_authenticated %}
+<section class="user">
+    <div class="user__wrap">
+        <div class="user__info">
+            <div class="user__infoTop">
+                <h3>我的奖励</h3>
+                <h2><span class="b_total"></span> AYZ</h2>
+            </div>
+            <div class="user__infoBottom flex vCenter">
+                <div class="user__infoLeft">
+                    <div class="user__infoItem">
+                        <h4>一级好友</h4>
+                        <h4 class="b1_cnt">0</h4>
+                    </div>
+                    <div class="user__infoItem">
+                        <h4>累计获得</h4>
+                        <h4><span class="b1_coins"></span> AZY</h4>
+                    </div>
+                </div>
+                <div class="user__infoCenter"></div>
+                <div class="user__infoRight">
+                    <div class="user__infoItem">
+                        <h4>二级好友</h4>
+                        <h4 class="b2_cnt">0</h4>
+                    </div>
+                    <div class="user__infoItem">
+                        <h4>累计获得</h4>
+                        <h4><span class="b2_coins"></span> AZY</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="user__line flex vCenter hCenter">
+            <hr />
+            <h6>奖励规则</h6>
+            <hr />
+        </div>
+        <ul class="user__rule">
+            <li>1.每邀请一位好友完成注册，您可以获得 1000 AYZ的奖励；</li>
+            <li>2.您邀请的好友，其邀请一位好友完成注册，即二级好友，您可以获得 500 AYZ的奖励；</li>
+            <li>3.活动有效期为2018年7月21日-2018年9月21日，活动结束后可将所获azy提取至钱包；</li>
+            <li>4.我的邀请码【<b id="rcode"></b>】</li>
+        </ul>
+        <div class="user__tip">【Flytoken-一键领取所有糖果的糖果钱包】百万糖果等你拿，下载Flytoken，输入邀请码<span class="user__tipCode"></span>，从此不被割韭菜。<p class="user__tipUrl" style="color: #0000FF;"></p></div>
+        <button class="user__btn" style="display: block;">复制专属邀请链接</button>
+        <input class="user__url" type="text" value="">
+    </div>
+
+</section>
+{% else %}
+{% endif %}
+
+<section class="main">
+    <div class="container">
+            <div class="row">
+                    <div class="col-md-7 left flex vCenter hCenter">
+                        <img src="//flytoken.pro/static/images/1.png" " alt=" ">
+                    </div>
+                    <div class="col-md-5 right flex vCenter hCenter ">
+                        <div class="main__box flex vertical vCenter ">
+                            <div class="main_wrap flex ">
+                                <div class="main_wrapLfet flex hCenter ">
+                                    <img src="//flytoken.pro/static/images/u28.png " alt=" ">
+                                </div>
+                                <div class="main_wrapRight flex vertical vCenter between ">
+                                    <div class="flex vCenter hCenter">
+                                        <img src="//flytoken.pro/static/images/u22.png " alt=" ">
+                                        <p>安卓下载</p>
+                                    </div>
+                                    <div class="flex vCenter hCenter">
+                                        <img src="//flytoken.pro/static/images/u20.png " alt=" ">
+                                        <p>敬请期待</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main_txt ">
+                                <h5 class="txt ">iOS客户端暂未上线，可先通过注册与邀请瓜分 azy 糖果奖励</h5>
+
+                                <h4>5亿 azy 空投任你领</h4>
+                                <h5>• 注册即送1000 azy</h5>
+                                <h5>• 邀请好友好友注册再送 500 azy</h5>
+                                <h5>• 好友的好友注册再送200 zay</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </div>
+
+</section>
+
+<section id="setpassword" class="setpass container flex vCenter hCenter" style="display: none;">
+        <div>
+            <div class="setpass__wrap">
+                <h4 class="setpass__wrapTitle">发送重置邮件</h4>
+                <div class="input-group input-group-lg">
+                    <div>邮箱</div>
+                    <input type="email" id="email" class="form-control" placeholder="">
+                </div>
+                <button class="setpass__btn" onclick="retrieve();" style="display: block;">修改密码</button>
+                <div class="setpass__bottom">
+                    <a href="//flytoken.pro/login">取消</a>
+                </div>
+            </div>
+        </div>
+</section>
+{% endblock %}
+
+{% block footer %}
+<footer class="footer">
+    <h3 class="footer__title ">联系我们</h3>
+    <div class="footer__wrap flex around ">
+        <img src="//flytoken.pro/static/images/u28.png " alt="flytoken ">
+        <img src="//flytoken.pro/static/images/u28.png " alt="flytoken ">
+    </div>
+    <div class="footer__desc flex around ">
+        <h6>客服微信：xxxxxx</h6>
+        <h6>官方微博：xxxxxx</h6>
+    </div>
+    <h6 class="footer__mail ">企业邮箱：hi@flytoken.pro</h6>
+    <h6 class="footer__copyright ">©Copyright 2018-20xx 杭州飞糖科技有限公司 浙ICP备180xxxx97号-1</h6>
+</footer>
+{% endblock %}
+
+
+{% block endScript %}
+<script>
+function retrieve() {
+    ajax({
+        url: `/reset_password/${document.querySelector('#email').value}/`,
+        success (e) {
+            if (e.code === 200) {
+                alert('邮件发送成功')
+            } else {
+                alert(e.msg)
+            }
+        },
+    });
+}
+
+document.addEventListener('DOMContentLoaded', ()=> {
+    let btn = document.querySelector('.user__btn');
+
+    if (location.hash === '#/password_reset_email') {
+        document.querySelector('.main').style = 'display: none';
+        document.querySelector('.footer').style = 'display: none';
+        document.querySelector('#setpassword').style = 'display: flex';
+        document.querySelector('body').style = 'width: 100%;height: 100%;'
+        document.querySelector('html').style = 'width: 100%;height: 100%;'
+    }
+
+    if (document.querySelectorAll('.user').length) {
+        ajax({
+            url: `/rcode`,
+            success (e) {
+                if (e.code === 200) {
+                    document.querySelector('#rcode').innerText = e.rcode
+                    document.querySelector('.user__tipCode').innerText = e.rcode
+                    document.querySelector('.user__url').value = `${location.protocol}flytoken.pro/signup/?rcode=${e.rcode}`
+                    document.querySelector('.user__tipUrl').innerText = `${location.protocol}flytoken.pro/signup/?rcode=${e.rcode}`
+                } else {
+                    alert(e.msg)
+                }
+            },
+        });
+
+        ajax({
+            url: `/bonus`,
+            success (e) {
+                console.log('eee', e)
+                document.querySelector('.b1_coins').innerHTML = e.b1_coins;
+                document.querySelector('.b1_cnt').innerHTML = e.b1_cnt;
+                document.querySelector('.b2_coins').innerHTML = e.b2_conis;
+                document.querySelector('.b2_cnt').innerHTML = e.b2_cnt;
+                document.querySelector('.b_total').innerHTML = Number.parseFloat(e.b_total);
+            },
+        });
+    }
+
+    if (btn) {
+        btn.addEventListener('click', event=> {
+            let url = document.querySelector('.user__url');
+            // 是否支持触摸事件
+            if (('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch) {
+                url.setSelectionRange(0, url.value.length);
+            } else {
+                url.select();
+            }
+            document.execCommand('copy');
+            alert('分享链接复制成功！');
+        }, false);
+    }
+
+
+
+});
+</script>
+{% endblock %}

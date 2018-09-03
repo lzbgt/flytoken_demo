@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block title %}
+flytoken-注册
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="//flytoken.pro/static/css/register.css">
+{% endblock %}
+
+{% block content %}
+<section class="main container flex vCenter hCenter">
+  <form method="post" action="/signup/">
+      {% csrf_token %}
+      <h4>5亿 azy 空投任你领</h4>
+      <h4 style="font-weight: normal;">注册即送1000 azy 邀请好友获得更多</h4>
+      <div class="main__wrap">
+          <h4 class="main__wrapTitle">注册账户</h4>
+          <div class="input-group input-group-lg">
+              <div>邮箱</div>
+              <input type="email" name="email" class="form-control" placeholder="">
+          </div>
+          <div class="input-group input-group-lg">
+              <div>密码</div>
+              <input type="password" name="password1" class="form-control" placeholder="">
+          </div>
+          <div class="input-group input-group-lg">
+              <div>邀请码（选填）</div>
+              <input type="text" name="rcode" class="form-control" placeholder="">
+          </div>
+          <button type="submit" class="main__btn" style="display: block;">注册</button>
+          <div class="main__bottom">
+              <input type="checkbox" checked>
+              <span>我已同意《用户协议》</span>
+              <a href="//flytoken.pro/login">登陆</a>
+          </div>
+      </div>
+  </form>
+</section>
+{% endblock %}

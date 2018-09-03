@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//flytoken.pro/static/css/bootstrap.css">
+    {% block css %}{% endblock %}
+    <link rel="stylesheet" href="//flytoken.pro/static/css/global.css">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+
+<body>
+
+    <div class="menu" style="display: none">
+        {% if user.is_authenticated %}
+        <a href="#" class="menu__item">{{ user.email }}</a>
+        <a href="//flytoken.pro/logout" class="menu__item">退出</a>
+        {% else %}
+        <a href="//flytoken.pro/signup" class="menu__item">注册</a>
+        <a href="//flytoken.pro/login" class="menu__item">登陆</a>
+        {% endif %}
+        <a class="menu__item">下载app</a>
+    </div>
+
+    <header class="navbar">
+        <div class="navbar__type flex">
+            <div class="navbar__typeLfet flex vCenter">
+                <a href="//flytoken.pro/">
+                    <img class="navbar__logo" src="//flytoken.pro/static/images/logo.png" alt="flytoken">
+                </a>
+                <h3 class="navbar__title">Flytoken</h3>
+                <h6>一键领取所有糖果的糖果钱包</h6>
+            </div>
+            <div class="navbar__typeRight flex vCenter">
+                {% if user.is_authenticated %}
+                <div class="unlogin flex vCenter hCenter">
+                    <div class="username" href="#" style="margin: 0 5px 0 0;">{{ user.email }}</div>
+                    <a class="out" href="//flytoken.pro/logout" class="">退出</a>
+                </div>
+                {% else %}
+                    <a href="#" class="down" style="font-weight: 500;">下载app</a>
+                    <div class="unlogin">
+                        <a class="" href="//flytoken.pro/signup" style="margin: 0 10px 0 0;">注册</a>
+                        <a href="//flytoken.pro/login" class="">登陆</a>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+        <div class="navbar__web flex">
+            <div class="navbar__webLeft flex vCenter">
+                <a href="//flytoken.pro/">
+                    <img class="navbar__logo" src="//flytoken.pro/static/images/logo.png" alt="flytoken">
+                </a>
+                <div style="margin: 0 0 0 10px;">
+                    <h4>Flytoken</h4>
+                    <h6>一键领取所有糖果的糖果钱包</h6>
+                </div>
+            </div>
+            <div class="navbar__webRight flex vCenter hCenter">
+                <img src="//flytoken.pro/static/images/u6.png" alt="flytoken">
+            </div>
+        </div>
+    </header>
+
+    {% block content %}
+    {% endblock %}
+
+    {% block footer %}
+    {% endblock %}
+
+    <script src="//flytoken.pro/static/js/index.js "></script>
+    {% block endScript %}
+    {% endblock %}
+
+</body>
+
+</html>

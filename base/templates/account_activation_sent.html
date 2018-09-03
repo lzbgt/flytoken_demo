@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block title %}
+flytoken-邮件已发送
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="//flytoken.pro/static/css/validate.css">
+{% endblock %}
+
+{% block content %}
+<section class="main container flex vCenter hCenter">
+    <div>
+        <h4>邮件已发送</h4>
+        <img src="//flytoken.pro/static/images/validate.png" alt="flytoken">
+        <h5>验证邮件已发送至 {{ user.email }}，请登录您的邮箱并按照指示完成验证，如果长时间(10分钟内)未收到邮件，请检查是否被归类为垃圾邮件。</h5>
+        <button onclick="resend_activation(event);" data-email="{{ user.email }}">重发电子邮件</button>
+    </div>
+</section>
+{% endblock %}
+
+{% block endScript %}
+<script>
+function resend_activation(e) {
+    ajax({
+        url: `/resend_activation/${location.search.split('meail=')[1] || e.toElement.dataset.email}/`,
+        success (e) {
+            if (e.code === 200) {
+                alert('邮件发送成功')
+            } else {
+                alert(e.msg)
+            }
+        },
+    });
+}
+</script>
+{% endblock %}
